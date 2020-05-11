@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Катя Земскова](https://up.htmlacademy.ru/htmlcss/28/user/516007).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor)
 
 ---
 
