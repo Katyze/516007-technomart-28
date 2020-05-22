@@ -12,8 +12,9 @@
             <a href="index.html">
                 <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
             </a>
-            <form action="#" method="get">
-                <input type="search" placeholder="Поиск:">
+            <form action="https://echo.htmlacademy.ru" method="get" name="search">
+              <label for="search" class="visually-hidden">Поиск</label>
+                <input type="search" placeholder="Поиск:" id="search"  name="search">
             </form>
             <ul>
                 <li><a href="#">Закладки:</a><span>0</span></li>
@@ -38,7 +39,7 @@
                 </ul>
             </div>
         </section>
-        <nav>
+        <nav aria-label="Навигация по сайту">
             <ul>
                 <li>
                     <a href="index.html">Главная</a>
@@ -235,9 +236,11 @@
     </main>
     <footer>
         <div>
-            <a href="#">Техномарт</a>
+            <a href="index.html">
+                <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
+            </a>
         </div>
-        <nav>
+        <nav aria-label="Навигация по сайту">
             <ul>
                 <li>
                     <a href="#">Компания</a>
@@ -261,7 +264,7 @@
                 <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                 <a href="tel:+78125550555">+7 (812) 550-05-55</a>
             </div>
-            <ul>
+            <ul aria-label="Навигация по внутренним разделам сайта">
                 <li>
                     <a href="#">Материалы</a>
                 </li>
@@ -278,7 +281,7 @@
         </div>
         <div>
             <p>© 2010–2019 Компания «Техномарт»<br> Все права защищены</p>
-            <ul>
+            <ul aria-label="Социальные сети">
                 <li>
                     <a href="#"><span class="visually-hidden">Vkontakte</span></a>
                 </li>
