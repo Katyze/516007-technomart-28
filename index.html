@@ -9,11 +9,11 @@
 <body>
     <header>
         <div>
-            <a href="index.html">
+            <a href="index.html" aria-label="На главную">
                 <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
             </a>
-            <form action="https://echo.htmlacademy.ru" method="get" name="search">
-                <label for="search" class="visually-hidden">Поиск</label>
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <label for="search" class="visually-hidden">Поиск по сайту</label>
                 <input type="search" placeholder="Поиск:" id="search" name="search">
             </form>
             <ul>
@@ -25,11 +25,11 @@
         <section>
             <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
             <div>
-                <a href="tel:+78125550555">+7 (812) 550-05-55</a>
+                <a href="tel:+78125550555" aria-label="Контактный телефон">+7 (812) 550-05-55</a>
                 <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
             <div>
-                <ul>
+                <ul aria-label="Навигация по профилю">
                     <li>
                         <a href="#">Войти</a>
                     </li>
@@ -236,7 +236,7 @@
     </main>
     <footer>
         <div>
-            <a href="index.html">
+            <a href="index.html" aria-label="На главную">
                 <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
             </a>
         </div>
@@ -262,7 +262,7 @@
         <div>
             <div>
                 <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-                <a href="tel:+78125550555">+7 (812) 550-05-55</a>
+                <a href="tel:+78125550555" aria-label="Контактный телефон">+7 (812) 550-05-55</a>
             </div>
             <ul aria-label="Навигация по внутренним разделам сайта">
                 <li>
@@ -294,9 +294,9 @@
             </ul>
             <div>
                 <p>Обратная связь:</p>
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта разработчика">mail@htmlacademy.ru</a>
                 <p>Разработано —</p>
-                <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика">htmlacademy.ru</a>
             </div>
         </div>
     </footer>
@@ -309,11 +309,11 @@
             </p>
             <p>
                 <label for="feedback-email">Ваш e-mail:</label>
-                <input id="feedback-email" type="text" placeholder="email@example.com" name="email">
+                <input id="feedback-email" type="email" placeholder="email@example.com" name="email" required>
             </p>
             <p>
                 <label for="textarea">Текст письма:</label>
-                <textarea id="textarea" placeholder="В свободной форме" name="order"></textarea>
+                <textarea id="textarea" placeholder="В свободной форме" name="order" required></textarea>
             </p>
             <button type="submit">Оформить заказ</button>
         </form>

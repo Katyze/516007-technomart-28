@@ -9,12 +9,12 @@
 <body>
     <header>
         <div>
-            <a href="index.html">
+            <a href="index.html" aria-label="На главную">
                 <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
             </a>
-            <form action="https://echo.htmlacademy.ru" method="get" name="search">
-                <label for="search" class="visually-hidden">Поиск</label>
-                <input type="search" placeholder="Поиск:" id="search">
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <label for="search" class="visually-hidden">Поиск по сайту</label>
+                <input type="search" placeholder="Поиск:" id="search" name="search">
             </form>
             <ul>
                 <li><a href="#">Закладки:</a><span>0</span></li>
@@ -25,13 +25,13 @@
         <section>
             <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
             <div>
-                <a href="tel:+78125550555">+7 (812) 550-05-55</a>
+                <a href="tel:+78125550555" aria-label="Контактный телефон">+7 (812) 550-05-55</a>
                 <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
             <div>
                 <div>
-                    <a href="#">Равшан Джамшутович</a>
-                    <a href="#">Выход</a>
+                    <a href="#" aria-label="Личный кабинет пользователя">Равшан Джамшутович</a>
+                    <a href="#" aria-label="Деавторизация">Выход</a>
                 </div>
                 <ul>
                     <li>
@@ -74,7 +74,7 @@
         <div>
             <ul class="breadcrumbs">
                 <li>
-                    <a href="index.html" aria-label="Ссылка на главную страницу"></a>
+                    <a href="index.html">На главную</a>
                 </li>
                 <li>
                     <a href="#">Каталог</a>
@@ -124,30 +124,30 @@
                 </fieldset>
                 <fieldset>
                     <legend>Производители:</legend>
-                    <label for="BOSCH">BOSCH</label>
-                    <input type="checkbox" id="BOSCH" name="manufacturer" value="BOSCH" checked>
-                    <label for="INTERSCOL">ИНТЕРСКОЛ</label>
-                    <input type="checkbox" id="INTERSCOL" name="manufacturer" value="INTERSCOL">
-                    <label for="MAKITA">MAKITA</label>
-                    <input type="checkbox" id="MAKITA" name="manufacturer" value="MAKITA" checked>
-                    <label for="DEWALT">DEWALT</label>
-                    <input type="checkbox" id="DEWALT" name="manufacturer" value="DEWALT">
-                    <label for="HITACHI">HITACHI</label>
-                    <input type="checkbox" id="HITACHI" name="manufacturer" value="HITACHI">
+                    <label for="bosch">BOSCH</label>
+                    <input type="checkbox" id="bosch" name="bosch" checked disabled>
+                    <label for="interscol">ИНТЕРСКОЛ</label>
+                    <input type="checkbox" id="interscol" name="interscol">
+                    <label for="makita">MAKITA</label>
+                    <input type="checkbox" id="makita" name="makita" checked>
+                    <label for="dewalt">DEWALT</label>
+                    <input type="checkbox" id="dewalt" name="dewalt">
+                    <label for="hitachi">HITACHI</label>
+                    <input type="checkbox" id="hitachi" name="hitachi">
                 </fieldset>
                 <fieldset>
                     <legend>Питание:</legend>
                     <label for="battery">Аккумуляторные</label>
-                    <input type="radio" id="battery" name="power_by" value="battery" checked>
+                    <input type="radio" id="battery" name="battery" checked disabled>
                     <label for="electricity">Сетевые</label>
-                    <input type="radio" id="electricity" name="power_by" value="electricity">
+                    <input type="radio" id="electricity" name="electricity">
                 </fieldset>
                 <button type="submit">Показать</button>
             </form>
         </section>
         <section>
             <div>
-                <ul>
+                <ul aria-label="Список товаров">
                     <li>
                         <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -240,16 +240,16 @@
             </div>
             <ul aria-label="pagination">
                 <li>
-                    <a>1</a>
+                    <a aria-label="Текущая станица">1</a>
                 </li>
                 <li>
-                    <a href="#">2</a>
+                    <a href="#" aria-label="На страницу">2</a>
                 </li>
                 <li>
-                    <a href="#">3</a>
+                    <a href="#" aria-label="На страницу">3</a>
                 </li>
                 <li>
-                    <a href="#">Следующая</a>
+                    <a href="#" aria-label="На страницу">Следующая</a>
                 </li>
             </ul>
         </section>
@@ -262,7 +262,7 @@
     </main>
     <footer>
         <div>
-            <a href="index.html">
+            <a href="index.html" aria-label="На главную">
                 <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
             </a>
         </div>
@@ -288,7 +288,7 @@
         <div>
             <div>
                 <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-                <a href="tel:+78125550555">+7 (812) 550-05-55</a>
+                <a href="tel:+78125550555" aria-label="Контактный телефон">+7 (812) 550-05-55</a>
             </div>
             <ul aria-label="Навигация по внутренним разделам сайта">
                 <li>
@@ -320,17 +320,17 @@
             </ul>
             <div>
                 <p>Обратная связь:</p>
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта разработчика">mail@htmlacademy.ru</a>
                 <p>Разработано —</p>
-                <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика">htmlacademy.ru</a>
             </div>
         </div>
     </footer>
     <div>
         <h4 class="visually-hidden">Результат добавления товара в корзину</h4>
-        <button type="button" aria-label="Закрыть форму"></button>
+        <button aria-label="Закрыть форму"></button>
         <p>Товар добавлен в корзину!</p>
         <a href="#">Оформить заказ</a>
-        <a href="#">Продолжить покупки</a>
+        <button aria-label="Закрыть форму">Продолжить покупки</button>
     </div>
 </body></html>
