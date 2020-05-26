@@ -1,0 +1,26 @@
+:root {
+    --basic-black: #000000;
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-darkblue: #3D546F;
+    --basic-grey: #C5C5C5;
+    --basic-background: #f3f7f8;
+    --white: #FFFFFF;
+    --special-orange: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-green: #8ED78F;
+    --special-purpule: #DC91D8;
+    --text-orange: #FFD180;
+}
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Cuprum", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    background-color: var(--white);
+}
