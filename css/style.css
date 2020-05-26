@@ -2,7 +2,8 @@
     --basic-black: #000000;
     --basic-red: #EE3643;
     --basic-green: #63A63E;
-    --basic-darkblue: #3D546F;
+    --basic-verydarkblue: #293449;
+    --basic-darkblue: #32425C;
     --basic-grey: #C5C5C5;
     --basic-background: #f3f7f8;
     --white: #FFFFFF;
@@ -23,4 +24,109 @@ body {
     font-weight: 400;
     color: var(--basic-black);
     background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    position: absolute;
+    width: 1px;
+}
+
+.header-navigation {
+    font-family: "Cuprum", sans-serif;
+    color: var(--white);
+    background-color: var(--basic-verydarkblue);
+}
+
+.logo {
+    background-color: var(--basic-red);
+    width: 220px;
+    height: 42px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.user-navigation li {
+    list-style: none;
+}
+
+.user-navigation a {
+    color: var(--white);
+}
+
+.user-navigation .checkout {
+    background-color: var(--basic-green);
+}
+
+.user-navigation .cart {
+    background-color: var(--basic-red);
+}
+
+.contact-navigation {
+    background-color: var(--basic-background);
+    font-family: "Cuprum", sans-serif;
+}
+
+.contact-navigation i {
+    color: var(--basic-red);
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.contact-navigation .number {
+    color: var(--basic-red);
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.contact-navigation address {
+    color: var(--basic-darkblue);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.profile-navigation li {
+    list-style: none;
+}
+
+.profile-navigation a {
+    color: var(--basic-black);
+    background-color: var(--white);
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.enter-property li {
+    list-style: none;
+}
+
+.enter-property a {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-darkblue);
+}
+
+.site-navigation {
+    background-color: var(--basic-darkblue);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.site-navigation li {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px
 }
