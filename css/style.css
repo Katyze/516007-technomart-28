@@ -50,7 +50,6 @@ img {
 
 .header-navigation {
     font-family: "Cuprum", sans-serif;
-    color: var(--white);
     background-color: var(--basic-verydarkblue);
 }
 
@@ -84,7 +83,7 @@ img {
     line-height: 23px;
 }
 
-.contact-navigation .number {
+.contact-navigation .phone-number {
     color: var(--basic-red);
     font-size: 21px;
     line-height: 30px;
@@ -115,4 +114,32 @@ img {
 
 .site-navigation a {
     color: var(--white);
+}
+
+.footer-navigation {
+		font-family: "Cuprum", sans-serif;
+		background-color: var(--basic-darkblue);
+}
+
+.footer-navigation a {
+		color: var(--white);
+}
+
+.footer-navigation address {
+		color: var(--white);
+		font-style: normal;
+}
+
+.inside-navigation a {
+  color: var(--text-orange);
+}
+
+.social-contact {
+  background-color: var(--basic-verydarkblue);
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+.developer-contact a {
+  color: var(--text-orange);
 }
