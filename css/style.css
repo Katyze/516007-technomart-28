@@ -1,133 +1,133 @@
 :root {
-    --basic-black: #000000;
-    --basic-red: #EE3643;
-    --basic-green: #63A63E;
-    --basic-verydarkblue: #293449;
-    --basic-darkblue: #32425C;
-    --basic-grey: #C5C5C5;
-    --basic-background: #f3f7f8;
-    --white: #FFFFFF;
-    --special-orange: #FFBF47;
-    --special-blue: #3BBCE3;
-    --special-green: #8ED78F;
-    --special-purpule: #DC91D8;
-    --text-orange: #FFD180;
+  --basic-black: #000000;
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-verydarkblue: #293449;
+  --basic-darkblue: #32425C;
+  --basic-grey: #C5C5C5;
+  --basic-background: #f3f7f8;
+  --white: #FFFFFF;
+  --special-orange: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-green: #8ED78F;
+  --special-purpule: #DC91D8;
+  --text-orange: #FFD180;
 }
 
 body {
-    min-width: 960px;
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--basic-black);
-    background-color: var(--white);
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--white);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    position: absolute;
-    width: 1px;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  position: absolute;
+  width: 1px;
 }
 
 .list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header-navigation {
-    font-family: "Cuprum", sans-serif;
-    background-color: var(--basic-verydarkblue);
+  font-family: "Cuprum", sans-serif;
+  background-color: var(--basic-verydarkblue);
 }
 
 .logo {
-    background-color: var(--basic-red);
-    width: 220px;
-    height: 42px;
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  background-color: var(--basic-red);
+  width: 220px;
+  height: 42px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .user-navigation a {
-    color: var(--white);
+  color: var(--white);
 }
 
 .user-navigation .checkout {
-    background-color: var(--basic-green);
+  background-color: var(--basic-green);
 }
 
 .user-navigation .cart {
-    background-color: var(--basic-red);
+  background-color: var(--basic-red);
 }
 
 .contact-navigation {
-    background-color: var(--basic-background);
-    font-family: "Cuprum", sans-serif;
+  background-color: var(--basic-background);
+  font-family: "Cuprum", sans-serif;
 }
 
 .contact-navigation i {
-    color: var(--basic-red);
-    font-size: 16px;
-    line-height: 23px;
+  color: var(--basic-red);
+  font-size: 16px;
+  line-height: 23px;
 }
 
 .contact-navigation .phone-number {
-    color: var(--basic-red);
-    font-size: 21px;
-    line-height: 30px;
+  color: var(--basic-red);
+  font-size: 21px;
+  line-height: 30px;
 }
 
 .contact-navigation address {
-    color: var(--basic-darkblue);
-		font-size: 14px;
-		font-style: normal;
+  color: var(--basic-darkblue);
+  font-size: 14px;
+  font-style: normal;
 }
 
 .profile-navigation a {
-    color: var(--basic-black);
-    background-color: var(--white);
-    font-size: 21px;
+  color: var(--basic-black);
+  background-color: var(--white);
+  font-size: 21px;
 }
 
 .enter-property a {
-    font-size: 16px;
-    line-height: 18px;
-    color: var(--basic-darkblue);
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-darkblue);
 }
 
 .site-navigation {
-    background-color: var(--basic-darkblue);
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  background-color: var(--basic-darkblue);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .site-navigation a {
-    color: var(--white);
+  color: var(--white);
 }
 
 .footer-navigation {
-		font-family: "Cuprum", sans-serif;
-		background-color: var(--basic-darkblue);
+  font-family: "Cuprum", sans-serif;
+  background-color: var(--basic-darkblue);
 }
 
 .footer-navigation a {
-		color: var(--white);
+  color: var(--white);
 }
 
 .footer-navigation address {
-		color: var(--white);
-		font-style: normal;
+  color: var(--white);
+  font-style: normal;
 }
 
 .inside-navigation a {
@@ -140,6 +140,7 @@ img {
   line-height: 18px;
   color: var(--white);
 }
+
 .developer-contact a {
   color: var(--text-orange);
 }
