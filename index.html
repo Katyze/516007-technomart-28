@@ -37,10 +37,10 @@
       <div class="profile-navigation">
         <ul class="list" aria-label="Навигация по профилю">
           <li>
-            <a href="#">Войти</a>
+            <a href="#" class="enter-button">Войти</a>
           </li>
           <li>
-            <a href="#">Регистрация</a>
+            <a href="#" class="registration-button">Регистрация</a>
           </li>
         </ul>
       </div>
@@ -159,11 +159,11 @@
       </ul>
     </section>
     <section>
-      <div>
+      <div class="headline">
         <h2>Популярные производители:</h2>
-        <a href="#">открыть каталог</a>
+        <a href="#" class="red-button red-button-catalog">открыть каталог</a>
       </div>
-      <ul>
+      <ul class="list developer">
         <li>
           <a href="#"><img src="img/bosch.png" width="126" height="37" alt="логотип компании Bosch"></a></li>
         <li>
@@ -189,17 +189,17 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="additional-services">
       <div>
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать
           ваши покупки приятными.</p>
       </div>
       <div>
-        <button>Доставка</button>
-        <button>Гарантия</button>
-        <button>Кредит</button>
-        <div>
+        <button class="blue-button">Доставка</button>
+        <button class="blue-button">Гарантия</button>
+        <button class="blue-button">Кредит</button>
+        <div class="services-items">
           <div>
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного
@@ -222,27 +222,27 @@
       </div>
     </section>
     <div>
-      <section>
-        <h2>Компания "Техномарт"</h2>
+      <section class="about">
+        <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br> ремонта и строительства не оставит
           равнодушными любителей сэкономить на<br> гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
         <p>Техномарт работает со многими транспортными компаниями:</p>
-        <ul>
+        <ul class="list">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#">Подробнее о компании</a>
+        <a href="#" class="red-button">Подробнее о компании</a>
       </section>
-      <section>
+      <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
         <a href="#">
           <img src="img/map.png" width="300" height="158"
             alt="Адрес компании Техномарт: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
-        <a href="#">Заблудились? Напишите нам!</a>
+        <a href="#" class="red-button">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
@@ -293,14 +293,14 @@
     </div>
     <div class="social-contact">
       <p>© 2010–2019 Компания «Техномарт»<br> Все права защищены</p>
-      <ul aria-label="Социальные сети" class="list">
-        <li>
+      <ul aria-label="Социальные сети" class="list social-button">
+        <li class="vkontakte">
           <a href="#"><span class="visually-hidden">Vkontakte</span></a>
         </li>
-        <li>
+        <li class="facebook">
           <a href="#"><span class="visually-hidden">Facebook</span></a>
         </li>
-        <li>
+        <li class="instagram">
           <a href="#"><span class="visually-hidden">Instagram</span></a>
         </li>
       </ul>
@@ -313,7 +313,7 @@
     </div>
   </footer>
   <div class="order-form">
-    <button type="button" aria-label="Закрыть форму"></button>
+    <button type="button" class="close-button" aria-label="Закрыть форму"></button>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="feedback-name">Ваше имя:</label>
@@ -327,13 +327,15 @@
         <label for="textarea">Текст письма:</label>
         <textarea id="textarea" placeholder="В свободной форме" name="order" required></textarea>
       </p>
-      <button type="submit">Оформить заказ</button>
+      <div class="button-wrapper">
+        <button type="submit" class="red-button">Оформить заказ</button>
+      </div>
     </form>
   </div>
-  <div>
+  <div class="module-map" >
     <h3 class="visually-hidden">Техномарт на карте</h3>
     <iframe src="https://yandex.ru/map-widget/v1/-/CCQZaVEy1B" width="943" height="449"></iframe>
-    <button type="button" aria-label="Закрыть карту"></button>
+    <button type="button" class="close-button" aria-label="Закрыть карту"></button>
   </div>
 </body>
 
