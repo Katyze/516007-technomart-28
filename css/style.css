@@ -144,3 +144,87 @@ img {
 .developer-contact a {
   color: var(--text-orange);
 }
+
+.offers a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(255,255, 255, 0.3);
+  /*как записать цвет фона переменная + опасити?*/
+}
+
+.offers li {
+  width: 300px;
+  min-height: 123px;
+}
+
+.offers span {
+  color: var(--white);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.offers .materials {
+  background-color: var(--special-orange);
+}
+
+.offers .tools {
+  background-color: var(--special-blue);
+}
+
+.offers .equipment {
+  background-color: var(--special-purpule);
+}
+
+.offers .discounts {
+  background-color: var(--special-green);
+}
+
+.offers .delivery {
+  background-color: var(--special-orange);
+}
+
+.special-offers h2 {
+  color: var(--white);
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.special-offers p {
+  color: var(--white);
+}
+
+.special-offers .rotary-hammers {
+  background-color: var(--basic-grey);
+  background-image: url(/img/rotary-hammer.jpg);
+  background-repeat: no-repeat;
+  width: 620px;
+  height: 266px;
+}
+
+.special-offers .drills {
+  background-color: var(--basic-grey);
+  background-image: url(/img/drill.jpg);
+  background-repeat: no-repeat;
+  width: 620px;
+  height: 266px;
+}
+
+.red-button {
+  background-color: var(--basic-red);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
