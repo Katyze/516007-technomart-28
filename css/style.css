@@ -183,15 +183,15 @@ img {
 }
 
 .vkontakte {
-  background-image: url(/img/icon-vk.svg);
+  background-image: url(../img/icon-vk.svg);
 }
 
 .facebook {
-  background-image: url(/img/icon-fb.svg);
+  background-image: url(../img/icon-fb.svg);
 }
 
 .instagram {
-  background-image: url(/img/icon-insta.svg);
+  background-image: url(../img/icon-insta.svg);
 }
 
 .developer-contact a {
@@ -284,11 +284,11 @@ img {
 }
 
 .special-offers .rotary-hammers {
-  background-image: url(/img/rotary-hammer.jpg);
+  background-image: url(../img/rotary-hammer.jpg);
 }
 
 .special-offers .drills {
-  background-image: url(/img/drill.jpg);
+  background-image: url(../img/drill.jpg);
 }
 
 .button-style {
