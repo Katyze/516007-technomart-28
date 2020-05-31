@@ -386,13 +386,11 @@ img {
   border: 1px solid var(--border-grey);
 }
 
-.additional-services,
-.about-product {
+.additional-services, .about-product {
   background-color: var(--blue-background);
 }
 
-.additional-services h2,
-.about-product h3 {
+.additional-services h2, .about-product h3 {
   font-family: var(--cuprum-font);
   font-size: 30px;
   line-height: 35px;
@@ -400,8 +398,7 @@ img {
   text-transform: uppercase;
 }
 
-.additional-services p,
-.about-product p {
+.additional-services p, .about-product p {
   font-size: 13px;
 }
 
@@ -454,8 +451,7 @@ img {
   padding: 11px 62px 9px 62px;
 }
 
-.order-form,
-.success-window {
+.order-form, .success-window {
   box-shadow: var(--form-shadow);
   border-top: 7px solid var(--basic-red);
 }
@@ -479,9 +475,7 @@ img {
   border: none;
 }
 
-.order-form label,
-.order-form .red-button,
-.success-window {
+.order-form label, .order-form .red-button, .success-window {
   font-family: var(--cuprum-font);
 }
 
@@ -563,8 +557,7 @@ img {
   min-height: 89px;
 }
 
-.sort h3,
-.sort-by a {
+.sort h3, .sort-by a {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -600,13 +593,11 @@ img {
   text-align: center;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.checkbox-sort,
-.radio-sort {
+.checkbox-sort, .radio-sort {
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
