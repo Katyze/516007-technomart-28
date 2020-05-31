@@ -78,7 +78,7 @@
   <main>
     <h1 class="visually-hidden">Каталог интернет-магазина Техномарт</h1>
     <div>
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs list">
         <li>
           <a href="index.html">На главную</a>
         </li>
@@ -88,13 +88,14 @@
         <li>
           <a href="#">Инструмент</a>
         </li>
-        <li>Перфораторы</li>
+        <li class="active">Перфораторы</li>
       </ul>
     </div>
-    <section>
+    <section class="sort">
       <h2>Перфораторы</h2>
       <div aria-label="Сортировка товаров">
-        <ul>
+        <h3>Сортировка:</h3>
+        <ul class="list sort-by">
           <li>
             <a href="#">По цене</a>
           </li>
@@ -112,43 +113,39 @@
           </li>
         </ul>
       </div>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <form method="get" action="https://echo.htmlacademy.ru" class="sort-form">
         <h3>Фильтр:</h3>
         <fieldset>
           <legend>Цена:</legend>
           <div>
-            <label for="range" class="visually-hidden">Сортировка по цене</label>
-            <input id="range" type="range" min="0" max="30000" value="25000" name="range">
-          </div>
-          <div>
             <label for="min_value" class="visually-hidden">Минимальная цена товара</label>
-            <input id="min_value" type="number" value="0" name="min_cost">
+            <input id="min_value" type="number" value="0" name="min_cost" class="range-sort">
             <span>-</span>
             <label for="max_value" class="visually-hidden">Максимальная цена товара</label>
-            <input id="max_value" type="number" value="30000" name="max_cost">
+            <input id="max_value" type="number" value="30000" name="max_cost" class="range-sort">
           </div>
         </fieldset>
         <fieldset>
           <legend>Производители:</legend>
-          <label for="bosch">BOSCH</label>
+          <label for="bosch" class="checkbox-sort">BOSCH</label>
           <input type="checkbox" id="bosch" name="bosch" checked disabled>
-          <label for="interscol">ИНТЕРСКОЛ</label>
+          <label for="interscol" class="checkbox-sort">ИНТЕРСКОЛ</label>
           <input type="checkbox" id="interscol" name="interscol">
-          <label for="makita">MAKITA</label>
+          <label for="makita" class="checkbox-sort">MAKITA</label>
           <input type="checkbox" id="makita" name="makita" checked>
-          <label for="dewalt">DEWALT</label>
+          <label for="dewalt" class="checkbox-sort">DEWALT</label>
           <input type="checkbox" id="dewalt" name="dewalt">
-          <label for="hitachi">HITACHI</label>
+          <label for="hitachi" class="checkbox-sort">HITACHI</label>
           <input type="checkbox" id="hitachi" name="hitachi">
         </fieldset>
         <fieldset>
           <legend>Питание:</legend>
-          <label for="battery">Аккумуляторные</label>
+          <label for="battery" class="radio-sort">Аккумуляторные</label>
           <input type="radio" id="battery" name="battery" checked disabled>
-          <label for="electricity">Сетевые</label>
+          <label for="electricity" class="radio-sort">Сетевые</label>
           <input type="radio" id="electricity" name="electricity">
         </fieldset>
-        <button type="submit">Показать</button>
+        <button type="submit" class="sort-button">Показать</button>
       </form>
     </section>
     <section>
@@ -244,7 +241,10 @@
           </li>
         </ul>
       </div>
-      <ul aria-label="pagination">
+      <ul aria-label="pagination" class="list pagination">
+        <li>
+          <a href="#" aria-label="На страницу" class="visually-hidden">Предыдущая</a>
+        </li>
         <li>
           <a aria-label="Текущая станица">1</a>
         </li>
@@ -255,11 +255,11 @@
           <a href="#" aria-label="На страницу">3</a>
         </li>
         <li>
-          <a href="#" aria-label="На страницу">Следующая</a>
+          <a href="#" aria-label="На страницу" class="next-page">Следующая</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="about-product">
       <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
         бетоне и камне.</p>
@@ -292,12 +292,12 @@
         </li>
       </ul>
     </nav>
-    <div class="inside-navigation">
+    <div">
       <div>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         <a href="tel:+78125550555" aria-label="Контактный телефон">+7 (812) 550-05-55</a>
       </div>
-      <ul aria-label="Навигация по внутренним разделам каталога" class="list">
+      <ul aria-label="Навигация по внутренним разделам каталога" class="list inside-navigation">
         <li>
           <a href="#">Материалы</a>
         </li>
@@ -333,12 +333,14 @@
       </div>
     </div>
   </footer>
-  <div>
+  <div class="success-window">
     <h4 class="visually-hidden">Результат добавления товара в корзину</h4>
-    <button aria-label="Закрыть форму"></button>
+    <button aria-label="Закрыть форму" class="close-button"></button>
     <p>Товар добавлен в корзину!</p>
-    <a href="#">Оформить заказ</a>
-    <button aria-label="Закрыть форму">Продолжить покупки</button>
+    <div class="button-wrapper">
+      <a href="#" class="button-style red-button">Оформить заказ</a>
+      <button aria-label="Закрыть форму" class="button-style another-close">Продолжить покупки</button>
+    </div>
   </div>
 </body>
 
