@@ -2,8 +2,8 @@
   --basic-black: #000000;
   --basic-red: #EE3643;
   --basic-green: #63A63E;
-  --basic-verydarkblue: #293449;
-  --basic-darkblue: #32425C;
+  --basic-darker-blue: #293449;
+  --basic-dark-blue: #32425C;
   --border-blue: #405069;
   --border-green: #367315;
   --border-grey: #EAEAEA;
@@ -20,6 +20,10 @@
   --special-purpule: #DC91D8;
   --text-orange: #FFD180;
   --icon-blue:  #212A3A;
+  --cuprum-font: "Cuprum", "Arial", sans-serif;
+  --under-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  --transperent-button: rgba(255,255, 255, 0.3);
+  --form-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -57,15 +61,15 @@ img {
 }
 
 .header-navigation {
-  font-family: "Cuprum", sans-serif;
-  background-color: var(--basic-verydarkblue);
+  font-family: var(--cuprum-font);
+  background-color: var(--basic-darker-blue);
 }
 
 .logo {
   background-color: var(--basic-red);
   width: 220px;
   height: 42px;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: var(--under-shadow);
   padding: 12px 57px 12px 55px;
 }
 
@@ -83,7 +87,7 @@ img {
 
 .contact-navigation {
   background-color: var(--basic-background);
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
 }
 
 .contact-navigation i {
@@ -101,7 +105,7 @@ img {
 }
 
 .contact-navigation address {
-  color: var(--basic-darkblue);
+  color: var(--basic-dark-blue);
   font-size: 14px;
   font-style: normal;
 }
@@ -127,13 +131,13 @@ img {
 .enter-property a {
   font-size: 16px;
   line-height: 18px;
-  color: var(--basic-darkblue);
+  color: var(--basic-dark-blue);
 }
 
 .site-navigation {
-  font-family: "Cuprum", sans-serif;
-  background-color: var(--basic-darkblue);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  font-family: var(--cuprum-font);
+  background-color: var(--basic-dark-blue);
+  box-shadow: var(--under-shadow);
 }
 
 .site-navigation a {
@@ -141,8 +145,8 @@ img {
 }
 
 .footer-navigation {
-  font-family: "Cuprum", sans-serif;
-  background-color: var(--basic-darkblue);
+  font-family: var(--cuprum-font);
+  background-color: var(--basic-dark-blue);
 }
 
 .footer-navigation a {
@@ -159,35 +163,32 @@ img {
 }
 
 .social-contact {
-  background-color: var(--basic-verydarkblue);
+  background-color: var(--basic-darker-blue);
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
 }
 
-.social-button li {
+.social-button {
+  display: block;
   background-color: var(--icon-blue);
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .vkontakte {
   background-image: url(/img/icon-vk.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .facebook {
   background-image: url(/img/icon-fb.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .instagram {
   background-image: url(/img/icon-insta.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .developer-contact a {
@@ -195,17 +196,11 @@ img {
 }
 
 .offers {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
 }
 
-.offers .offers-button {
-  color: var(--white);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: rgba(255,255, 255, 0.3);  /*как записать цвет фона переменная + опасити?*/
+.offers-button {
+  background-color: var(--transperent-button);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -279,30 +274,33 @@ img {
   color: var(--white);
 }
 
-.special-offers .rotary-hammers {
+.special-offers .rotary-hammers,
+.special-offers .drills {
   background-color: var(--basic-grey);
-  background-image: url(/img/rotary-hammer.jpg);
   background-repeat: no-repeat;
   width: 620px;
   height: 266px;
+}
+
+.special-offers .rotary-hammers {
+  background-image: url(/img/rotary-hammer.jpg);
 }
 
 .special-offers .drills {
-  background-color: var(--basic-grey);
   background-image: url(/img/drill.jpg);
-  background-repeat: no-repeat;
-  width: 620px;
-  height: 266px;
 }
 
-.red-button {
-  background-color: var(--basic-red);
+.button-style {
   color: var(--white);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+}
+
+.red-button {
+  background-color: var(--basic-red);
   border: none;
 }
 
@@ -311,14 +309,14 @@ img {
 }
 
 .headline {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
   background-color: var(--special-grey);
   min-height: 89px;
   margin-bottom: 20px;
 }
 
 .headline h2 {
-  color: var(--basic-darkblue);
+  color: var(--basic-dark-blue);
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
@@ -360,7 +358,7 @@ img {
 }
 
 .green-button {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
@@ -371,10 +369,10 @@ img {
 }
 
 .green-button-transparent {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
   font-size: 14px;
   line-height: 18px;
-  color: var(--basic-darkblue);
+  color: var(--basic-dark-blue);
   background-color: var(--white);
   padding: 7px 31px 7px 30px;
   border-radius: 2px;
@@ -392,7 +390,7 @@ img {
 }
 
 .additional-services h2 {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
   font-size: 30px;
   line-height: 35px;
   font-weight: normal;
@@ -404,24 +402,24 @@ img {
 }
 
 .blue-button {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
   color: var(--white);
-  background-color: var(--basic-darkblue);
+  background-color: var(--basic-dark-blue);
   padding: 13.5px 139px 17.5px 22px;
   border: none;
-  box-shadow: 0px 1px 0px var(--basic-verydarkblue), inset 0px 1px 0px var(--border-blue);
+  box-shadow: 0px 1px 0px var(--basic-darker-blue), inset 0px 1px 0px var(--border-blue);
 }
 
 .services-items h3 {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
   font-weight: normal;
   font-size: 30px;
   line-height: 34px;
   text-transform: uppercase;
-  color: var(--basic-darkblue);
+  color: var(--basic-dark-blue);
 }
 
 .services-items p,
@@ -430,10 +428,15 @@ img {
   font-size: 13px;
 }
 
+.services-items .red-button {
+  padding: 10px 50px;
+  border-radius: 2px;
+}
+
 .about h2,
 .contacts h2,
 .about .list {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
 }
 
 .about h2,
@@ -455,7 +458,7 @@ img {
 .order-form {
   width: 620px;
   min-height: 430px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: var(-form-shadow);
   border-top: 7px solid var(--basic-red);
 }
 
@@ -470,7 +473,7 @@ img {
 
 .order-form label,
 .order-form .red-button {
-  font-family: "Cuprum", sans-serif;
+  font-family: var(--cuprum-font);
 }
 
 .order-form input,
