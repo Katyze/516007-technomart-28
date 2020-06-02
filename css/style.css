@@ -89,21 +89,20 @@ img {
 .header-navigation {
   font-family: var(--cuprum-font);
   background-color: var(--basic-darker-blue);
-  margin-bottom: 40px;
   width: 100%;
 }
 
 .header-navigation .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .logo {
+  display: block;
   background-color: var(--basic-red);
-  width: 220px;
-  height: 42px;
   box-shadow: var(--under-shadow);
-  padding: 12px 57px 12px 55px;
+  padding: 12px 57px 17px 55px;
 }
 
 .user-navigation {
@@ -123,26 +122,37 @@ img {
   background-color: var(--basic-red);
 }
 
-.contact-navigation {
+.wrapper-background {
   background-color: var(--basic-background);
-  font-family: var(--cuprum-font);
+  min-height: 280px;
+}
+
+.contact-navigation {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--cuprum-font);
+  margin-top: 40px;
   margin-bottom: 40px;
+  min-height: 80px;
 }
 
 .contact-navigation i {
   color: var(--basic-red);
   font-size: 16px;
   line-height: 23px;
+  width: 197px;
+  margin-left: 30px;
 }
 
 .contact-navigation .phone-number {
+  display: block;
   color: var(--basic-red);
   font-size: 21px;
   line-height: 30px;
   border: 3px solid var(--white);
   padding: 4px 42px 5px 71px;
+  margin-bottom: 3px;
 }
 
 .contact-navigation address {
@@ -155,6 +165,15 @@ img {
   color: var(--basic-black);
   background-color: var(--white);
   font-size: 21px;
+}
+
+.profile-navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-navigation {
+  width: 280px;
 }
 
 .profile-navigation .enter-button {
@@ -179,10 +198,20 @@ img {
   font-family: var(--cuprum-font);
   background-color: var(--basic-dark-blue);
   box-shadow: var(--under-shadow);
+  padding: 0;
 }
 
 .site-navigation a {
+  display: block;
+  padding: 16px 24px 20px 24px;
   color: var(--white);
+}
+
+.site-navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 10px;
 }
 
 .footer-navigation {
@@ -244,6 +273,23 @@ img {
   background-color: var(--transperent-button);
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.offers ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.discounts {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.delivery {
+  grid-column-start: 3;
+  grid-row-start: 3;
 }
 
 .offers li {
@@ -308,6 +354,7 @@ img {
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .special-offers p {
@@ -321,12 +368,25 @@ img {
   height: 266px;
 }
 
+.hammers {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  position: relative;
+}
+
 .special-offers .rotary-hammers {
   background-image: url(../img/rotary-hammer.jpg);
 }
 
 .special-offers .drills {
   background-image: url(../img/drill.jpg);
+  display: none;
+}
+
+.special-offers button {
+  position: absolute;
 }
 
 .button-style {
