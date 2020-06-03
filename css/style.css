@@ -90,12 +90,31 @@ img {
   font-family: var(--cuprum-font);
   background-color: var(--basic-darker-blue);
   width: 100%;
+  min-height: 42px;
 }
 
 .header-navigation .container {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search-form input {
+  width: 270px;
+  min-height: 42px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+input[type="search"]::placeholder {
+  color: var(--white);
 }
 
 .logo {
@@ -107,11 +126,16 @@ img {
 
 .user-navigation {
   display: flex;
-  flex-direction: row;
+  margin-left: auto;
 }
 
-.user-navigation a, .user-navigation span {
+.user-navigation a {
+  display: block;
   color: var(--white);
+  width: 150px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  text-align: center;
 }
 
 .user-navigation .checkout {
@@ -161,10 +185,11 @@ img {
   font-style: normal;
 }
 
-.profile-navigation a {
+.profile-navigation a, .profile-navigation-username a {
   color: var(--basic-black);
   background-color: var(--white);
   font-size: 21px;
+  display: block;
 }
 
 .profile-navigation ul {
@@ -176,6 +201,11 @@ img {
   width: 280px;
 }
 
+.profile-navigation-username {
+  display: flex;
+
+}
+
 .profile-navigation .enter-button {
   padding: 12px 27px 12px 45px;
 }
@@ -184,8 +214,19 @@ img {
   padding: 12px 24px;
 }
 
-.profile-navigation .personal-area {
+.profile-navigation-username .personal-area {
   padding: 12px 57px 12px 56px;
+}
+
+.profile-navigation-username .exit-button {
+  font-size: 0;
+}
+
+.enter-property {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 210px;
 }
 
 .enter-property a {
@@ -275,7 +316,7 @@ img {
   padding-bottom: 10px;
 }
 
-.offers ul {
+.offers .offers-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -292,7 +333,7 @@ img {
   grid-row-start: 3;
 }
 
-.offers li {
+.offers li:not(.rotary-hammers):not(.drills) {
   width: 300px;
   min-height: 123px;
 }
@@ -361,7 +402,7 @@ img {
   color: var(--white);
 }
 
-.special-offers .rotary-hammers, .special-offers .drills {
+.rotary-hammers, .drills {
   background-color: var(--basic-grey);
   background-repeat: no-repeat;
   width: 620px;
@@ -385,7 +426,7 @@ img {
   display: none;
 }
 
-.special-offers button {
+.hammers button {
   position: absolute;
 }
 

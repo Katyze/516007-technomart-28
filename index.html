@@ -16,16 +16,18 @@
   <header class="main-header">
     <div class="header-navigation">
       <div class="container">
-        <a href="index.html" aria-label="На главную">
-          <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18" class="logo">
-        </a>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" placeholder="Поиск:" id="search" name="search">
-        </form>
+        <div class="search-wrapper">
+          <a href="index.html" aria-label="На главную">
+            <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18" class="logo">
+          </a>
+          <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
+            <label for="search" class="visually-hidden">Поиск по сайту</label>
+            <input type="search" placeholder="Поиск:" id="search" name="search">
+          </form>
+        </div>
         <ul class="user-navigation list">
-          <li><a href="#">Закладки:</a><span>0</span></li>
-          <li><a href="#">Корзина:</a><span>0</span></li>
+          <li><a href="#">Закладки:<span>0</span></a></li>
+          <li><a href="#">Корзина:<span>0</span></a></li>
           <li><a href="#" class="checkout">Оформить заказ</a></li>
         </ul>
       </div>
@@ -78,7 +80,7 @@
   <main class="container">
     <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
     <section class="offers">
-      <ul class="list">
+      <ul class="offers-grid list">
         <li class="materials">
           <span>Материалы</span>
           <a href="#" class="offers-button button-style">на любой вкус</a>
@@ -100,36 +102,22 @@
           <a href="#" class="offers-button button-style">бесплатно</a>
         </li>
         <li class="hammers">
-          <div class="special-offers">
-            <button>Вперед</button>
-            <button>Назад</button>
-            <div class="rotary-hammers">
-              <h2>Перфораторы</h2>
-              <p>Настоящие мужские игрушки</p>
-              <a href="catalog.html" class="red-button button-style">открыть каталог</a>
-            </div>
-            <div class="drills">
-              <h2>Дрели</h2>
-              <p>Соседям на радость!</p>
-              <a href="catalog.html" class="red-button button-style">открыть каталог</a>
-            </div>
-          </div>
+          <button>Вперед</button>
+          <button>Назад</button>
+          <ul class="special-offers list">
+            <li class="rotary-hammers">
+                <h2>Перфораторы</h2>
+                <p>Настоящие мужские игрушки</p>
+                <a href="catalog.html" class="red-button button-style">открыть каталог</a>
+            </li>
+            <li class="drills">
+                <h2>Дрели</h2>
+                <p>Соседям на радость!</p>
+                <a href="catalog.html" class="red-button button-style">открыть каталог</a>
+            </li>
+          </ul>
         </li>
       </ul>
-      <!-- <div class="special-offers">
-        <button>Вперед</button>
-        <button>Назад</button>
-        <div class="rotary-hammers">
-          <h2>Перфораторы</h2>
-          <p>Настоящие мужские игрушки</p>
-          <a href="catalog.html" class="red-button button-style">открыть каталог</a>
-        </div>
-        <div class="drills">
-          <h2>Дрели</h2>
-          <p>Соседям на радость!</p>
-          <a href="catalog.html" class="red-button button-style">открыть каталог</a>
-        </div>
-      </div> -->
     </section>
     <section>
       <div class="headline">
