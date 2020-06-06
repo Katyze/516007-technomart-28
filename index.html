@@ -16,15 +16,13 @@
   <header class="main-header">
     <div class="header-navigation">
       <div class="container">
-        <div class="search-wrapper">
           <a href="index.html" aria-label="На главную">
             <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18" class="logo">
           </a>
           <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
             <label for="search" class="visually-hidden">Поиск по сайту</label>
-            <input type="search" placeholder="Поиск:" id="search" name="search">
+            <input type="search" placeholder="Поиск:" id="search" name="search" class="header-search">
           </form>
-        </div>
         <ul class="user-navigation list">
           <li><a href="#">Закладки:<span>0</span></a></li>
           <li><a href="#">Корзина:<span>0</span></a></li>
@@ -101,16 +99,18 @@
           <span>Доставка</span>
           <a href="#" class="offers-button button-style">бесплатно</a>
         </li>
-        <li class="hammers">
+        <li class="special-tools">
           <button>Вперед</button>
           <button>Назад</button>
+          <button>Первый слайд</button>
+          <button>Второй слайд</button>
           <ul class="special-offers list">
-            <li class="rotary-hammers">
+            <li class="rotary-hammers slide-current slide">
               <h2>Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
               <a href="catalog.html" class="red-button button-style">открыть каталог</a>
             </li>
-            <li class="drills">
+            <li class="drills slide">
               <h2>Дрели</h2>
               <p>Соседям на радость!</p>
               <a href="catalog.html" class="red-button button-style">открыть каталог</a>

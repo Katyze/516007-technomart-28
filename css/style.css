@@ -91,29 +91,23 @@ img {
   background-color: var(--basic-darker-blue);
   width: 100%;
   min-height: 42px;
+  margin-bottom:-5px;
 }
 
 .header-navigation .container {
   display: flex;
-  flex-direction: row;
   align-items: center;
-}
-
-.search-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .search-form input {
   width: 270px;
-  min-height: 42px;
+  height: 42px;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 
-input[type="search"]::placeholder {
+input[class="header-search"]::placeholder {
   color: var(--white);
 }
 
@@ -127,6 +121,7 @@ input[type="search"]::placeholder {
 .user-navigation {
   display: flex;
   margin-left: auto;
+
 }
 
 .user-navigation a {
@@ -223,9 +218,13 @@ input[type="search"]::placeholder {
 
 .enter-property {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
   width: 210px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.enter-property li:first-child {
+  margin-right: 30px;
 }
 
 .enter-property a {
@@ -247,10 +246,20 @@ input[type="search"]::placeholder {
   color: var(--white);
 }
 
+.site-navigation li {
+  margin: auto;
+}
+
+.site-navigation li:first-child {
+  margin-left: 0;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
+}
+
 .site-navigation ul {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
   padding: 0 10px;
 }
 
@@ -408,7 +417,7 @@ input[type="search"]::placeholder {
   height: 266px;
 }
 
-.hammers {
+.special-tools {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -422,10 +431,17 @@ input[type="search"]::placeholder {
 
 .special-offers .drills {
   background-image: url(../img/drill.jpg);
+}
+
+.slide {
   display: none;
 }
 
-.hammers button {
+.slide-current {
+  display: block;
+}
+
+.special-tools button {
   position: absolute;
 }
 
