@@ -124,13 +124,13 @@
         <h2>Популярные товары:</h2>
         <a href="#" class="red-button button-style">все популярные товары</a>
       </div>
-      <ul class="list">
+      <ul class="list catalog">
         <li class="catalog-item">
           <img src="img/bosch9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
           <h3>Перфоратор BOSCH BFG 9000</h3>
           <p>32500 Р.</p>
           <a href="#" class="red-button button-style">25500 Р.</a>
-          <div>
+          <div class="buy-button">
             <a href="#" class="green-button">Купить</a>
             <a href="#" class="green-button-transparent">В закладки</a>
           </div>
@@ -140,7 +140,7 @@
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <p>22500 Р.</p>
           <a href="#" class="red-button button-style">15500 Р.</a>
-          <div>
+          <div class="buy-button">
             <a href="#" class="green-button">Купить</a>
             <a href="#" class="green-button-transparent">В закладки</a>
           </div>
@@ -150,7 +150,7 @@
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <p>30500 Р.</p>
           <a href="#" class="red-button button-style">25500 Р.</a>
-          <div>
+          <div class="buy-button">
             <a href="#" class="green-button">Купить</a>
             <a href="#" class="green-button-transparent">В закладки</a>
           </div>
@@ -159,7 +159,7 @@
           <img src="img/bosch2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <a href="#" class="red-button button-style">12500 Р.</a>
-          <div>
+          <div class="buy-button">
             <a href="#" class="green-button">Купить</a>
             <a href="#" class="green-button-transparent">В закладки</a>
           </div>
@@ -211,25 +211,27 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать
           ваши покупки приятными.</p>
       </div>
-      <div>
-        <button class="blue-button">Доставка</button>
-        <button class="blue-button">Гарантия</button>
-        <button class="blue-button">Кредит</button>
+      <div class="additional-item">
+        <div>
+          <button class="blue-button">Доставка</button>
+          <button class="blue-button">Гарантия</button>
+          <button class="blue-button">Кредит</button>
+        </div>
         <div class="services-items">
-          <div>
+          <div class="slide slide-current">
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного
               его<br> возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
               новый.<br> Дом уж восстановите как-нибудь сами.
             </p>
           </div>
-          <div>
+          <div class="slide">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы
               неплохо заработаем,<br> поднимая его на ваш этаж!
             </p>
           </div>
-          <div>
+          <div class="slide">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.
             </p>
@@ -238,7 +240,7 @@
         </div>
       </div>
     </section>
-    <div>
+    <div class="about-us">
       <section class="about">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -264,6 +266,7 @@
     </div>
   </main>
   <footer class="footer-navigation">
+    <div class="container footer-site-navigation">
     <a href="index.html" aria-label="На главную">
       <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18" class="logo">
     </a>
@@ -286,7 +289,8 @@
         </li>
       </ul>
     </nav>
-    <div>
+  </div>
+    <div class="container">
       <div>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         <a href="tel:+78125550555" aria-label="Контактный телефон">+7 (812) 550-05-55</a>
@@ -306,7 +310,9 @@
         </li>
       </ul>
     </div>
+
     <div class="social-contact">
+      <div class="container">
       <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
       <ul aria-label="Социальные сети" class="list">
         <li>
@@ -325,6 +331,7 @@
         <p>Разработано —</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика">htmlacademy.ru</a>
       </div>
+    </div>
     </div>
   </footer>
   <div class="order-form">
