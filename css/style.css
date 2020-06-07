@@ -246,15 +246,7 @@ input[class="header-search"]::placeholder {
 }
 
 .site-navigation li {
-  margin: auto;
-}
-
-.site-navigation li:first-child {
-  margin-left: 0;
-}
-
-.site-navigation li:last-child {
-  margin-right: 0;
+  width: 100%;
 }
 
 .site-navigation ul {
