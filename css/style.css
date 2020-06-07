@@ -40,6 +40,10 @@ body {
   background-color: var(--white);
 }
 
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
 a {
   text-decoration: none;
 }
@@ -78,10 +82,12 @@ img {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+  background-color: var(--basic-background);
+  padding-bottom: 60px;
 }
 
 .container {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -90,13 +96,20 @@ img {
   font-family: var(--cuprum-font);
   background-color: var(--basic-darker-blue);
   width: 100%;
-  min-height: 42px;
+}
+
+.logo-wrapper {
+  display: flex;
+  background-color: var(--basic-red);
+  box-shadow: var(--under-shadow);
+  width: 220px;
+  height: 47px;
+  padding-bottom: -5px;
   margin-bottom: -5px;
 }
 
 .header-navigation .container {
   display: flex;
-  align-items: center;
 }
 
 .search-form input {
@@ -105,17 +118,17 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  padding-left: 42px;
+  outline: none;
 }
 
-input[class="header-search"]::placeholder {
+.header-search::placeholder {
   color: var(--white);
 }
 
 .logo {
   display: block;
-  background-color: var(--basic-red);
-  box-shadow: var(--under-shadow);
-  padding: 12px 57px 17px 55px;
+  margin: auto;
 }
 
 .user-navigation {
@@ -140,19 +153,19 @@ input[class="header-search"]::placeholder {
   background-color: var(--basic-red);
 }
 
-.wrapper-background {
-  background-color: var(--basic-background);
-  min-height: 280px;
+.contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 270px;
 }
 
 .contact-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: var(--cuprum-font);
-  margin-top: 40px;
+  padding-top: 46px;
   margin-bottom: 40px;
-  min-height: 80px;
 }
 
 .contact-navigation i {
@@ -161,6 +174,7 @@ input[class="header-search"]::placeholder {
   line-height: 23px;
   width: 197px;
   margin-left: 30px;
+  margin-top: -3.5px;
 }
 
 .contact-navigation .phone-number {
@@ -233,26 +247,30 @@ input[class="header-search"]::placeholder {
 }
 
 .site-navigation {
-  font-family: var(--cuprum-font);
+  display: flex;
+  flex-wrap: wrap;
   background-color: var(--basic-dark-blue);
   box-shadow: var(--under-shadow);
-  padding: 0;
+  font-family: var(--cuprum-font);
+  padding-left: 24px;
+  padding-right: 19px;
 }
 
 .site-navigation a {
   display: block;
-  padding: 16px 24px 20px 24px;
+  padding-top: 16px;
+  padding-bottom: 20px;
   color: var(--white);
+  text-align: center;
 }
 
 .site-navigation li {
-  width: 100%;
+  flex-grow: 1;
 }
 
-.site-navigation ul {
-  display: flex;
-  padding: 0 10px;
-}
+/* .site-navigation li:first-of-type {
+  padding-left: 2px;
+} */
 
 .footer-navigation {
   font-family: var(--cuprum-font);
@@ -460,28 +478,31 @@ input[class="header-search"]::placeholder {
   padding: 11px 46px 10px 46px;
 }
 
+.developer-wrapper {
+  padding-bottom: 70px;
+}
+
 .headline {
   font-family: var(--cuprum-font);
   background-color: var(--special-grey);
-  min-height: 89px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  padding: 25px 14px 26px 28px;
 }
 
 .headline h2 {
   color: var(--basic-dark-blue);
   font-size: 30px;
-  line-height: 40px;
+  line-height: 38px;
   text-transform: uppercase;
   font-weight: normal;
-  margin-left: 28px;
+  margin: 0;
 }
 
 .headline .red-button {
   padding: 11px 24px 9px 24px;
   margin-left: auto;
-  margin-right: 14px;
 }
 
 .headline .red-button-catalog {
@@ -567,7 +588,6 @@ input[class="header-search"]::placeholder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
-  margin-bottom: 134px;
 }
 
 .developer img {
@@ -602,12 +622,15 @@ input[class="header-search"]::placeholder {
 .additional-services p, .about-product p {
   font-size: 13px;
   margin-top: 0;
+}
+
+.wrapper-services {
+  background-color: var(--blue-background);
+  padding-bottom: 70px;
+  padding-top: 64px;
   margin-bottom: 70px;
 }
 
-.additional-services {
-  margin-bottom: 70px;
-}
 
 .additional-services p {
   width: 400px;
@@ -739,7 +762,7 @@ input[class="header-search"]::placeholder {
   width: 21px;
   height: 21px;
   background-color: var(--white);
-  background-image: url(/img/icon-close.svg);
+  background-image: url(../img/icon-close.svg);
   background-repeat: no-repeat;
   border: none;
 }

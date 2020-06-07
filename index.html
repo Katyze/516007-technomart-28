@@ -16,7 +16,7 @@
   <header class="main-header">
     <div class="header-navigation">
       <div class="container">
-        <a href="index.html" aria-label="На главную">
+        <a href="index.html" class="logo-wrapper" aria-label="На главную">
           <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18" class="logo">
         </a>
         <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
@@ -24,16 +24,15 @@
           <input type="search" placeholder="Поиск:" id="search" name="search" class="header-search">
         </form>
         <ul class="user-navigation list">
-          <li><a href="#">Закладки:<span>0</span></a></li>
-          <li><a href="#">Корзина:<span>0</span></a></li>
+          <li><a href="#">Закладки: <span>0</span></a></li>
+          <li><a href="#">Корзина: <span>0</span></a></li>
           <li><a href="#" class="checkout">Оформить заказ</a></li>
         </ul>
       </div>
     </div>
-    <div class="wrapper-background">
       <section class="contact-navigation container">
         <i>Интернет-магазин строительных материалов<br> и инструментов для ремонта</i>
-        <div>
+        <div class="contacts-wrapper">
           <a href="tel:+78125550555" aria-label="Контактный телефон" class="phone-number">+7 (812) 550-05-55</a>
           <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
@@ -48,8 +47,8 @@
           </ul>
         </div>
       </section>
-      <nav class="site-navigation container" aria-label="Навигация по сайту">
-        <ul class="list">
+      <nav class="container" aria-label="Навигация по сайту">
+        <ul class="list site-navigation ">
           <li>
             <a href="index.html">Главная</a>
           </li>
@@ -73,11 +72,10 @@
           </li>
         </ul>
       </nav>
-    </div>
   </header>
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
-    <section class="offers">
+    <section class="offers container">
       <ul class="offers-grid list">
         <li class="materials">
           <span>Материалы</span>
@@ -119,7 +117,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="container">
       <div class="headline">
         <h2>Популярные товары:</h2>
         <a href="#" class="red-button button-style">все популярные товары</a>
@@ -166,7 +164,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="developer-wrapper container">
       <div class="headline">
         <h2>Популярные производители:</h2>
         <a href="#" class="red-button button-style red-button button-style-catalog">открыть каталог</a>
@@ -205,7 +203,8 @@
         </li>
       </ul>
     </section>
-    <section class="additional-services">
+    <section class="wrapper-services">
+      <div class="additional-services container">
       <div>
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать
@@ -239,8 +238,9 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
-    <div class="about-us">
+    <div class="about-us container">
       <section class="about">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -267,7 +267,7 @@
   </main>
   <footer class="footer-navigation">
     <div class="container footer-site-navigation">
-      <a href="index.html" aria-label="На главную">
+      <a href="index.html" class="logo-wrapper"  aria-label="На главную">
         <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18" class="logo">
       </a>
       <nav aria-label="Навигация по сайту">
@@ -310,7 +310,6 @@
         </li>
       </ul>
     </div>
-
     <div class="social-contact">
       <div class="container">
         <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
