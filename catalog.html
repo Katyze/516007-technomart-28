@@ -13,10 +13,10 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header catalog-main-header">
     <div class="header-navigation">
       <div class="container">
-        <a href="index.html"  class="logo- logo-wrapper-footer" aria-label="На главную">
+        <a href="index.html"  class="logo-wrapper" aria-label="На главную">
           <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="108" height="18" class="logo">
         </a>
         <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
@@ -77,7 +77,8 @@
         </ul>
       </nav>
   </header>
-  <main class="container">
+  <main>
+    <div class="container">
     <h1 class="visually-hidden">Каталог интернет-магазина Техномарт</h1>
     <div>
       <ul class="breadcrumbs list">
@@ -94,8 +95,8 @@
       </ul>
     </div>
     <section class="sort">
-      <h2>Перфораторы</h2>
-      <div aria-label="Сортировка товаров">
+      <h2 class="catalog-headline">Перфораторы</h2>
+      <div aria-label="Сортировка товаров" class="sort-container">
         <h3>Сортировка:</h3>
         <ul class="list sort-by">
           <li>
@@ -149,8 +150,6 @@
         </fieldset>
         <button type="submit" class="sort-button">Показать</button>
       </form>
-    </section>
-    <section>
       <ul aria-label="Список товаров" class="list catalog-page">
         <li class="catalog-item">
           <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -259,7 +258,9 @@
         </li>
       </ul>
     </section>
+  </div>
     <section class="about-product">
+      <div class="container">
       <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
         бетоне и камне.</p>
@@ -267,6 +268,7 @@
         шуруповерта и отбойного молотка.</p>
       <p>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
         ударная дрель.</p>
+      </div>
     </section>
   </main>
   <footer class="footer-navigation">
