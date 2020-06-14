@@ -1,6 +1,7 @@
 :root {
   --basic-black: #000000;
   --basic-red: #EE3643;
+  --deep-red: #BA2732;
   --basic-green: #63A63E;
   --basic-darker-blue: #293449;
   --basic-dark-blue: #32425C;
@@ -107,6 +108,10 @@ img {
   margin-bottom: -5px;
 }
 
+.logo-wrapper:active {
+  background-color: var(--deep-red);
+}
+
 .header-navigation .container {
   display: flex;
 }
@@ -119,6 +124,47 @@ img {
   background-color: transparent;
   padding-left: 42px;
   outline: none;
+  cursor: pointer;
+}
+
+.search-form input:focus {
+  background-color: var(--white);
+  color: var(--basic-black);
+}
+
+.header-search:focus::placeholder {
+  color: transparent;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-button {
+  cursor: pointer;
+  background-color: var(--basic-darker-blue);
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 11px;
+  left: 18px;
+}
+
+.search-button svg {
+  opacity: 0.5;
+}
+
+.header-search:hover + .search-button svg {
+  opacity: 1;
+}
+
+.header-search:focus + .search-button {
+  background-color: var(--white);
+}
+
+.header-search:focus + .search-button path {
+  fill: var(--basic-red);
+  opacity: 1;
 }
 
 .header-search::placeholder {
@@ -128,6 +174,15 @@ img {
 .logo {
   display: block;
   margin: auto;
+}
+
+.bookmarks {
+  position: relative;
+}
+
+.bookmarks::before {
+  content: url(../img/icon-bookmark.svg);
+  position: absolute;
 }
 
 .user-navigation {
