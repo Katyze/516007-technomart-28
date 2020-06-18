@@ -345,6 +345,7 @@ img {
   font-family: var(--cuprum-font);
   padding-left: 24px;
   padding-right: 19px;
+  position: relative;
 }
 
 .site-navigation a {
@@ -750,7 +751,7 @@ img {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  padding: 25px 14px 26px 28px;
+  padding: 25px 19px 26px 28px;
 }
 
 .headline h2 {
@@ -763,12 +764,12 @@ img {
 }
 
 .headline .red-button {
-  padding: 11px 24px 9px 24px;
+  padding: 11px 38px 9px 39px;
   margin-left: auto;
 }
 
 .headline .red-button-catalog {
-  padding: 11px 38px 9px 39px;
+  padding: 11px 24px 9px 24px;
 }
 
 .catalog-main-header {
@@ -785,8 +786,23 @@ img {
   padding-left: 40px;
 }
 
+/* .breadcrumbs li:not(:first-child)::before {
+  content: url(../img/icon-right-small.svg);
+  position: absolute;
+}
+
+.breadcrumbs li:nth-child(2)::before {
+  left: 30px;
+} */
+
 .breadcrumbs li:first-of-type {
   font-size: 0;
+}
+
+.breadcrumbs li:first-of-type::before {
+  content: url(../img/icon-home.svg);
+  position: absolute;
+  top: 2px;
 }
 
 .catalog {
@@ -845,6 +861,13 @@ img {
   border: 1px solid var(--border-grey);
 }
 
+.catalog-item:nth-child(2n)::after {
+  content: url(../img/new-icon.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .catalog-item h3 {
   padding-left: 31px;
   padding-right: 29px;
@@ -866,15 +889,23 @@ img {
 
 .catalog-item .red-button {
   position: absolute;
-  right: 37px;
+  right: 35px;
   bottom: 20px;
   display: block;
   font-size: 17px;
   font-weight: bold;
-  padding: 10px 42px 10px 27px;
+  padding: 10px 39px 10px 32px;
   border-radius: 2px;
   font-family: inherit;
-  background-image: linear-gradient(225deg, var(--white) 15px, transparent 15px), linear-gradient(315deg, var(--white) 15px, transparent 15px);
+}
+
+.catalog-item .red-button::after {
+  content: url(../img/arrow-price.svg);
+  position: absolute;
+  top: 0;
+  right: -3px;
+  width: 19px;
+  height: 100%;
 }
 
 .buttons-image-wrapper {
@@ -904,7 +935,7 @@ img {
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 4px 20px var(--form-shadow);
+  box-shadow: var(--form-shadow);
 }
 
 .catalog-item:hover .buy-buttons {
@@ -973,7 +1004,7 @@ img {
   font-weight: normal;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .additional-services p, .about-product p {
@@ -981,15 +1012,46 @@ img {
   margin: 0;
 }
 
-.wrapper-services {
-  background-color: var(--blue-background);
-  padding-bottom: 70px;
-  padding-top: 64px;
+.other-delivery::after {
+  content: url(../img/delivery.png);
+  position: absolute;
+  top: 16px;
+  left: 232px;
 }
 
+.guarantee::after {
+  content: url(../img/guarantee.png);
+  position: absolute;
+  top: -2px;
+  left: 319px;
+}
+
+.credit::after {
+  content: url(../img/credit.png);
+  position: absolute;
+  top: -5px;
+  left: 246px;
+}
+
+.wrapper-services {
+  background-color: var(--blue-background);
+  padding-bottom: 100px;
+  padding-top: 63px;
+}
 
 .additional-services p {
   width: 400px;
+}
+
+.services-button-wrapper {
+  position: relative;
+}
+
+.services-button-wrapper::after {
+  content: url(../img/shadow-line.png);
+  position: absolute;
+  top: -45px;
+  right: 0;
 }
 
 .blue-button {
@@ -1003,30 +1065,58 @@ img {
   padding-bottom: 17.5px;
   padding-left: 22px;
   border: none;
-  box-shadow: 0px 1px 0px var(--basic-darker-blue), inset 0px 1px 0px var(--border-blue);
   display: block;
   width: 240px;
   text-align: start;
+  outline: none;
+  cursor: pointer;
+}
+
+.blue-button:hover {
+  background-color: var(--basic-darker-blue);
+  color: var(--white);
+}
+
+.blue-button:active {
+  background-color: var(--white);
+  color: var(--basic-dark-blue);
+}
+
+.blue-button:not(:first-child):not(:active) {
+  box-shadow: inset 0px 1px 0px var(--border-blue), 0px 1px 0px var(--basic-dark-blue);
+}
+
+.button-current {
+  background-color: var(--white);
+  color: var(--basic-dark-blue);
 }
 
 .additional-item {
   display: flex;
-  padding-top: 70px;
+  padding-top: 75px;
+}
+
+.services-items {
+  position: relative;
 }
 
 .services-items h3 {
   font-family: var(--cuprum-font);
   font-weight: normal;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 34px;
   text-transform: uppercase;
   color: var(--basic-dark-blue);
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin-top: -8px;
+  margin-bottom: 28px;
 }
 
 .services-items p, .about p, .contacts p {
   font-size: 13px;
+}
+
+.credit p {
+  padding-bottom: 33px;
 }
 
 .services-items>div {
@@ -1034,7 +1124,7 @@ img {
 }
 
 .services-items .red-button {
-  padding: 10px 50px;
+  padding: 10px 45px 11px 46px;
   border-radius: 2px;
 }
 
