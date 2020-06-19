@@ -88,7 +88,7 @@
     <div>
       <ul class="breadcrumbs list">
         <li>
-          <a href="index.html">На главную</a>
+          <a href="index.html"><span class="visually-hidden">Главная страница</span></a>
         </li>
         <li>
           <a href="#">Каталог</a>
@@ -103,7 +103,7 @@
       <h2 class="catalog-headline">Перфораторы</h2>
       <div aria-label="Сортировка товаров" class="sort-container">
         <h3>Сортировка:</h3>
-        <ul class="list sort-by">
+        <ul class="list sort-by sort-property">
           <li>
             <a href="#">По цене</a>
           </li>
@@ -113,24 +113,39 @@
           <li>
             <a href="#">По функционалу</a>
           </li>
+        </ul>
+        <ul class="list sort-by sort-by-arrows">
           <li>
-            <a href="#">Сортировка по возрастанию</a>
+            <a href="#" class="sort-by-high">
+              <span class="visually-hidden">Сортировка по возрастанию</span>
+          </a>
           </li>
           <li>
-            <a href="#">Сортировка по убыванию</a>
+            <a href="#" class="sort-by-low">
+              <span class="visually-hidden">Сортировка по убыванию</span>
+          </a>
           </li>
         </ul>
       </div>
       <form method="get" action="https://echo.htmlacademy.ru" class="sort-form">
-        <h3>Фильтр:</h3>
+        <h3 class="filter">Фильтр:</h3>
         <fieldset>
           <legend>Цена:</legend>
           <div>
-            <label for="min_value" class="visually-hidden">Минимальная цена товара</label>
-            <input id="min_value" type="number" value="0" name="min_cost" class="range-sort">
-            <span>-</span>
-            <label for="max_value" class="visually-hidden">Максимальная цена товара</label>
-            <input id="max_value" type="number" value="30000" name="max_cost" class="range-sort">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label for="min_value" class="visually-hidden">Минимальная цена товара</label>
+              <input id="min_value" type="number" value="0" name="min_cost" class="range-sort">
+              <span>&#8212;</span>
+              <label for="max_value" class="visually-hidden">Максимальная цена товара</label>
+              <input id="max_value" type="number" value="30000" name="max_cost" class="range-sort">
+            </div>
           </div>
         </fieldset>
         <fieldset>
