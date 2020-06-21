@@ -31,7 +31,8 @@
   --cuprum-font: "Cuprum", "Arial", sans-serif;
   --under-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   --transperent-button: rgba(255, 255, 255, 0.3);
-  --form-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  --sort-border: rgba(0, 0, 0, 0.1);
+  --form-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
 }
 
 body {
@@ -150,8 +151,8 @@ img {
   border: none;
   padding: 0;
   position: absolute;
-  top: 11px;
-  left: 18px;
+  top: 12px;
+  left: 17px;
 }
 
 .search-button svg {
@@ -177,14 +178,19 @@ img {
 
 .logo {
   display: block;
-  margin: auto;
+  margin: 9px 57px 14px 55px;
+}
+
+.logo-footer {
+  display: block;
+  margin: 9px 40px 14px 42px;
 }
 
 .bookmarks::before {
   content: url(../img/icon-bookmark.svg);
   position: absolute;
-  top: 12px;
-  left: 21px;
+  top: 11px;
+  left: 20px;
   opacity: 0.3;
 }
 
@@ -192,7 +198,7 @@ img {
   content: url(../img/icon-cart.svg);
   position: absolute;
   top: 10px;
-  left: 28px;
+  left: 26px;
   opacity: 0.3;
 }
 
@@ -229,8 +235,12 @@ img {
   opacity: 1;
 }
 
-.user-navigation a:not(.checkout) {
-  padding-left: 24px;
+.bookmarks {
+  padding-left: 19px;
+}
+
+.header-cart {
+  padding-left: 22px;
 }
 
 .checkout {
@@ -270,9 +280,18 @@ img {
   color: var(--basic-red);
   font-size: 21px;
   line-height: 30px;
+  font-weight: bold;
   border: 3px solid var(--white);
-  padding: 4px 42px 5px 71px;
+  padding: 5px 42px 4px 71px;
   margin-bottom: 3px;
+  position: relative;
+}
+
+.phone-number::before {
+  content: url(../img/icon-phone.svg);
+  position: absolute;
+  top: 8px;
+  left: 36px;
 }
 
 .contact-navigation address {
@@ -308,11 +327,19 @@ img {
 }
 
 .profile-navigation .enter-button {
-  padding: 12px 27px 12px 45px;
+  padding: 10px 27px 11px 45px;
+  position: relative;
+}
+
+.enter-button::before {
+  content: url(../img/icon-login.svg);
+  position: absolute;
+  left: 17px;
+  top: 13px;
 }
 
 .profile-navigation .registration-button {
-  padding: 12px 24px;
+  padding: 10px 24px 11px 24px;
 }
 
 .profile-navigation-username .personal-area {
@@ -406,6 +433,7 @@ img {
 .footer-contacts-wrapper {
   max-width: 340px;
   margin-top: -5px;
+  padding-left: 3px;
 }
 
 .footer-site-navigation, .footer-site-navigation ul, .inside-navigation-wrapper, .inside-navigation, .social-contac-wrapper, .social-network, .developer-contact {
@@ -425,6 +453,12 @@ img {
 
 .footer-site-navigation ul, .inside-navigation {
   flex-wrap: wrap;
+  margin-left: auto;
+  width: 605px;
+}
+
+.inside-navigation {
+  width: 585px;
 }
 
 .footer-site-navigation li {
@@ -443,7 +477,7 @@ img {
 .social-contac-wrapper > p {
   width: 227px;
   margin: 0;
-  margin-right: auto;
+  margin-right: 165px;
 }
 
 .social-network {
@@ -453,7 +487,8 @@ img {
 .developer-contact {
   justify-content: space-between;
   width: 286px;
-  margin-left: auto;
+  margin-left: 118px;
+  margin-right: 13px;
 }
 
 .developer-contact p {
@@ -461,7 +496,7 @@ img {
 }
 
 .social-contac-wrapper {
-  padding-top: 34px;
+  padding-top: 36px;
   padding-bottom: 30px;
 }
 
@@ -756,6 +791,10 @@ img {
   padding: 25px 19px 26px 28px;
 }
 
+.headline-index {
+  padding: 25px 14px 26px 28px;
+}
+
 .headline h2 {
   color: var(--basic-dark-blue);
   font-size: 30px;
@@ -767,6 +806,11 @@ img {
 
 .headline .red-button {
   padding: 11px 38px 9px 39px;
+  margin-left: auto;
+}
+
+.headline .popular-button {
+  padding: 10px 25px 10px 24px;
   margin-left: auto;
 }
 
@@ -846,6 +890,11 @@ img {
   grid-column: 2 / 5;
   grid-row-start: 6;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination li:not(:first-child) {
+  margin-right: 10px;
 }
 
 .catalog-page {
@@ -865,20 +914,11 @@ img {
   border: 1px solid var(--border-grey);
 }
 
-.catalog-item:nth-child(2n)::after {
+.new-icon::after {
   content: url(../img/new-icon.png);
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.catalog-item h3 {
-  padding-left: 31px;
-  padding-right: 29px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 20px;
-  margin-bottom: 8px;
 }
 
 .catalog-item p {
@@ -957,6 +997,14 @@ img {
   margin-bottom: 10px;
   top: 37px;
   left: 41px;
+  position: relative;
+}
+
+.green-button::before {
+  content: url(../img/icon-cart.svg);
+  position: absolute;
+  left: 30px;
+  top: 10px;
 }
 
 .green-button-transparent {
@@ -1115,6 +1163,11 @@ img {
   margin-bottom: 28px;
 }
 
+.other-delivery h3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
 .services-items p, .about p, .contacts p {
   font-size: 13px;
 }
@@ -1180,7 +1233,19 @@ img {
 }
 
 .about li {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
+  padding-left: 37px;
+  position: relative;
+}
+
+.about li::before {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+  position: absolute;
+  top: 13px;
+  left: 0;
 }
 
 .contacts {
@@ -1329,6 +1394,16 @@ img {
   margin: 0;
 }
 
+.catalog-item h3 {
+  padding-left: 31px;
+  padding-right: 29px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  text-transform: none;
+}
+
 .sort-container h3 {
   margin-right: 140px;
 }
@@ -1355,7 +1430,7 @@ img {
   margin-left: auto;
 }
 
-.sort h3 {
+.sort-container h3, .sort-form h3 {
   font-weight: normal;
 }
 
@@ -1380,16 +1455,25 @@ img {
 
 .sort-form legend {
   font-size: 17px;
-  line-height: 30px;
+  line-height: 27px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 11px;
+}
+
+.sort .range-form {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--sort-border);
+}
+
+.sort .checkbox-form {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--sort-border);
 }
 
 .range-controls {
   height: 80px;
   background-color: var(--sort-background);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   padding-top: 39px;
   position: relative;
 }
@@ -1410,11 +1494,20 @@ img {
 .range-controls .toggle {
   position: absolute;
   top: 29px;
-  left: 0;
   width: 20px;
   height: 22px;
   background-image: url(../img/filter-button.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
+  outline: none;
+}
+
+.toggle-min {
+  left: 18px;
+}
+
+.toggle-max {
+  left: 161px;
 }
 
 .range-sort {
@@ -1438,6 +1531,75 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+.checkbox-form label, .radio-form label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 35px;
+}
+
+.checkbox-form label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.radio-form label {
+  margin-bottom: 22px;
+}
+
+.radio-form label:last-child {
+  margin-bottom: 40px;
+}
+
+.input-checkbox + label::before {
+  content: url(../img/checkbox-off.svg);
+  position: absolute;
+  top: -2px;
+  left: 0;
+  opacity: 0.8;
+}
+
+.input-checkbox:checked + label::before {
+  content: url(../img/checkbox-on.svg);
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.input-checkbox:hover + label::before, .input-radio:hover + label::before {
+  opacity: 1;
+}
+
+.input-checkbox:disabled + label::before, .input-radio:disabled + label::before {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.input-radio + label::before {
+  content: url(../img/radio-off.svg);
+  position: absolute;
+  top: -2px;
+  left: 0;
+  opacity: 0.8;
+}
+
+.input-radio:checked + label::before {
+  content: url(../img/radio-on.svg);
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.checkbox-form legend {
+  padding-top: 17px;
+  padding-bottom: 20px;
+}
+
+.radio-form legend {
+  padding-top: 19px;
+  padding-bottom: 26px;
+}
+
 .checkbox-sort, .radio-sort {
   font-size: 15px;
   line-height: 19px;
@@ -1454,11 +1616,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .pagination a {
   font-size: 13px;
+  line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
   border: 1px solid var(--border-light-grey);
   border-radius: 2px;
   padding: 9px 14px;
+  display: block;
 }
 
 .pagination .next-page {
