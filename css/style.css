@@ -159,15 +159,15 @@ img {
   opacity: 0.3;
 }
 
-.header-search:hover + .search-button svg {
+.header-search:hover+.search-button svg {
   opacity: 1;
 }
 
-.header-search:focus + .search-button {
+.header-search:focus+.search-button {
   background-color: var(--white);
 }
 
-.header-search:focus + .search-button path {
+.header-search:focus+.search-button path {
   fill: var(--basic-red);
   opacity: 1;
 }
@@ -389,7 +389,6 @@ img {
 
 .site-navigation li {
   flex-grow: 1;
-
 }
 
 .footer-navigation {
@@ -414,7 +413,6 @@ img {
 .inside-navigation li {
   flex-grow: 1;
   text-align: right;
-
 }
 
 .inside-navigation a {
@@ -474,7 +472,7 @@ img {
   color: var(--white);
 }
 
-.social-contac-wrapper > p {
+.social-contac-wrapper>p {
   width: 227px;
   margin: 0;
   margin-right: 165px;
@@ -1551,7 +1549,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   margin-bottom: 40px;
 }
 
-.input-checkbox + label::before {
+.input-checkbox+label::before {
   content: url(../img/checkbox-off.svg);
   position: absolute;
   top: -2px;
@@ -1559,23 +1557,23 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   opacity: 0.8;
 }
 
-.input-checkbox:checked + label::before {
+.input-checkbox:checked+label::before {
   content: url(../img/checkbox-on.svg);
   position: absolute;
   top: -2px;
   left: 0;
 }
 
-.input-checkbox:hover + label::before, .input-radio:hover + label::before {
+.input-checkbox:hover+label::before, .input-radio:hover+label::before {
   opacity: 1;
 }
 
-.input-checkbox:disabled + label::before, .input-radio:disabled + label::before {
+.input-checkbox:disabled+label::before, .input-radio:disabled+label::before {
   opacity: 0.4;
   cursor: default;
 }
 
-.input-radio + label::before {
+.input-radio+label::before {
   content: url(../img/radio-off.svg);
   position: absolute;
   top: -2px;
@@ -1583,7 +1581,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   opacity: 0.8;
 }
 
-.input-radio:checked + label::before {
+.input-radio:checked+label::before {
   content: url(../img/radio-on.svg);
   position: absolute;
   top: -2px;
