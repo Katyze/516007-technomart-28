@@ -475,11 +475,12 @@ img {
 .social-contac-wrapper>p {
   width: 227px;
   margin: 0;
-  margin-right: 165px;
+  margin-right: 164px;
 }
 
 .social-network {
   width: 132px;
+  margin-top: -3px;
 }
 
 .developer-contact {
@@ -1258,7 +1259,7 @@ img {
   width: 100%;
 }
 
-.order-form, .success-window {
+.order-form, .success-window, .module-map {
   box-shadow: var(--form-shadow);
   border-top: 7px solid var(--basic-red);
 }
@@ -1266,6 +1267,16 @@ img {
 .success-window {
   width: 620px;
   height: 275px;
+  position: relative;
+  padding-top: 66px;
+  text-align: center;
+}
+
+.success-window::before {
+  content: url(../img/icon-mark.svg);
+  position: absolute;
+  top: 48px;
+  left: 81px;
 }
 
 .modal {
@@ -1275,6 +1286,7 @@ img {
 .order-form {
   width: 620px;
   min-height: 423px;
+  position: relative;
 }
 
 .close-button {
@@ -1284,6 +1296,45 @@ img {
   background-image: url(../img/icon-close.svg);
   background-repeat: no-repeat;
   border: none;
+  position: absolute;
+  top: 14px;
+  right: 11px;
+}
+
+.module-map .close-button {
+  top: 17px;
+  right: 10px;
+}
+
+.success-window .close-button {
+  top: 11px;
+  right: 11px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 80px 31px 80px;
+}
+
+.feedback-form p {
+  width: 220px;
+  margin: 0;
+}
+
+.feedback-form p:nth-child(1) {
+  margin-right: auto;
+}
+
+.feedback-form p:nth-child(3) {
+  flex-grow: 1;
+  margin-top: 13px;
+}
+
+.feedback-form label {
+  margin-bottom: 10px;
+  display: block;
 }
 
 .order-form label, .order-form .red-button, .success-window {
@@ -1301,33 +1352,48 @@ img {
 .order-form input {
   width: 220px;
   min-height: 38px;
+  display: block;
+  padding-left: 10px;
 }
 
 .order-form textarea {
   width: 460px;
   min-height: 114px;
   resize: none;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .order-form .red-button {
-  padding: 11px 180px 9px 180px;
-  margin-top: 37px;
+  padding: 11px 199px 9px 199px;
+  margin: auto;
 }
 
 .button-wrapper {
   background-color: var(--light-backgroun);
   height: 112px;
   text-align: center;
+  width: 100%;
+  display: flex;
+}
+
+.success-window .button-wrapper {
+align-items: center;
+padding-left: 114px;
+padding-right: 113px;
 }
 
 .success-window p {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+  margin: 0;
+  padding-bottom: 67px;
 }
 
 .success-window .red-button {
   padding: 11px 46px 9px 47px;
+  margin-right: 10px;
 }
 
 .another-close {
@@ -1338,9 +1404,9 @@ img {
 }
 
 .module-map {
-  border-top: 7px solid var(--basic-red);
   width: 943px;
   height: 449px;
+  position: relative;
 }
 
 .module-map iframe {

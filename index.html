@@ -347,20 +347,22 @@
   <div class="order-form modal">
     <button type="button" class="close-button" aria-label="Закрыть форму"></button>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="feedback-name">Ваше имя:</label>
-        <input id="feedback-name" type="text" placeholder="Имя Фамилия" name="name">
-      </p>
-      <p>
-        <label for="feedback-email">Ваш e-mail:</label>
-        <input id="feedback-email" type="email" placeholder="email@example.com" name="email" required>
-      </p>
-      <p>
-        <label for="textarea">Текст письма:</label>
-        <textarea id="textarea" placeholder="В свободной форме" name="order" required></textarea>
-      </p>
+      <div class="feedback-form">
+        <p>
+          <label for="feedback-name">Ваше имя:</label>
+          <input id="feedback-name" type="text" placeholder="Имя Фамилия" name="name">
+        </p>
+        <p>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input id="feedback-email" type="email" placeholder="email@example.com" name="email" required>
+        </p>
+        <p>
+          <label for="textarea">Текст письма:</label>
+          <textarea id="textarea" placeholder="В свободной форме" name="order" required></textarea>
+        </p>
+      </div>
       <div class="button-wrapper">
-        <button type="submit" class="red-button button-style">Оформить заказ</button>
+        <button type="submit" class="red-button button-style">Отправить</button>
       </div>
     </form>
   </div>
