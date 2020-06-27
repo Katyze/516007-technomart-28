@@ -38,7 +38,7 @@
       </div>
     </div>
     <section class="contact-navigation container">
-      <i>Интернет-магазин строительных материалов<br> и инструментов для ремонта</i>
+      <p class="index-tagline">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
       <div class="contacts-wrapper">
         <a href="tel:+78125550555" aria-label="Контактный телефон" class="phone-number">+7 (812) 555-05-55</a>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -105,12 +105,16 @@
           <a href="#" class="offers-button button-style">бесплатно</a>
         </li>
         <li class="special-tools">
-          <button class="arrow-left" aria-label="Листать слайды влево"></button>
-          <button class="arrow-right" aria-label="Листать слайды вправо"></button>
-          <button class="first-radio-slide" aria-label="Первый слайд"></button>
-          <button class="second-radio-slide active-slide" aria-label="Второй слайд"></button>
           <ul class="special-offers list">
-            <li class="rotary-hammers slide-current slide">
+            <div class="slider-buttons">
+              <button type="button" class="arrow-left arrow" aria-label="Листать слайды влево"></button>
+              <button type="button" class="arrow-right arrow" aria-label="Листать слайды вправо"></button>
+              <div class="radio-slider-buttons">
+                <button type="button" class="first-radio-slide" aria-label="Первый слайд"></button>
+                <button type="button" class="second-radio-slide active-slide" aria-label="Второй слайд"></button>
+              </div>
+            </div>
+            <li class="rotary-hammers slide-current">
               <h2>Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
               <a href="catalog.html" class="red-button button-style">открыть каталог</a>
@@ -214,7 +218,7 @@
       <div class="additional-services container">
         <div>
           <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать
+          <p class="additional-services-paragraph">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать
             ваши покупки приятными.</p>
         </div>
         <div class="additional-item">
@@ -231,7 +235,7 @@
                 новый.<br> Дом уж восстановите как-нибудь сами.
               </p>
             </div>
-            <div class="slide other-delivery slide-current">
+            <div class="other-delivery slide-current">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы
                 неплохо заработаем,<br> поднимая его на ваш этаж!
@@ -319,7 +323,10 @@
     </div>
     <div class="social-contact">
       <div class="container social-contac-wrapper">
-        <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <div class="copyright">
+          <p>© 2010–2019 Компания «Техномарт»</p>
+          <p>Все права защищены</p>
+        </div>
         <ul aria-label="Социальные сети" class="list social-network">
           <li>
             <a href="#" class="social-button vkontakte"><span class="visually-hidden">Vkontakte</span></a>
@@ -332,11 +339,11 @@
           </li>
         </ul>
         <div class="developer-contact">
-          <div>
+          <div class="contact-email">
             <p>Обратная связь:</p>
             <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта разработчика">mail@htmlacademy.ru</a>
           </div>
-          <div>
+          <div class="contact-website">
             <p>Разработано —</p>
             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика">htmlacademy.ru</a>
           </div>
