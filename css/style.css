@@ -4,6 +4,7 @@
   --deep-red: #BA2732;
   --basic-green: #63A63E;
   --green-button: #5FBB2D;
+  --dark-green-button: #518534;
   --basic-darker-blue: #293449;
   --basic-dark-blue: #32425C;
   --active-header-button: #161D29;
@@ -32,6 +33,8 @@
   --cuprum-font: "Cuprum", "Arial", sans-serif;
   --under-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   --transperent-button: rgba(255, 255, 255, 0.3);
+  --transperent-hover-button: rgba(197, 197, 197, 0.3);
+  --transperent-active-button: rgba(169, 169, 169, 0.3);
   --sort-border: rgba(0, 0, 0, 0.1);
   --form-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
 }
@@ -86,7 +89,7 @@ img {
 }
 
 .main-header {
-  margin-bottom: 50px;
+  margin-bottom: 59px;
   display: flex;
   flex-direction: column;
   background-color: var(--basic-background);
@@ -504,6 +507,15 @@ img {
   padding-right: 20px;
 }
 
+.site-navigation a:hover {
+  background-color: var(--basic-darker-blue);
+}
+
+.site-navigation a:active {
+  background-color: var(--active-header-button);
+  opacity: 0.5;
+}
+
 .site-navigation li {
   flex-grow: 1;
 }
@@ -515,6 +527,15 @@ img {
 
 .footer-navigation a {
   color: var(--white);
+}
+
+.footer-site-navigation a:hover,  .inside-navigation-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.footer-site-navigation a:active,  .inside-navigation-wrapper a:active {
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .footer-navigation address {
@@ -537,8 +558,8 @@ img {
 }
 
 .inside-navigation-wrapper {
-  padding-top: 29px;
-  padding-bottom: 54px;
+  padding-top: 27px;
+  padding-bottom: 56px;
 }
 
 .inside-navigation-wrapper li {
@@ -591,7 +612,7 @@ img {
 
 .copyright {
   width: 227px;
-  margin-right: 164px;
+  margin-right: 163px;
 }
 
 .copyright p {
@@ -599,8 +620,9 @@ img {
 }
 
 .social-network {
-  width: 132px;
+  width: 134px;
   margin-top: -3px;
+  justify-content: space-between;
 }
 
 .developer-contact {
@@ -609,6 +631,15 @@ img {
   width: 286px;
   margin-left: 118px;
   margin-right: 13px;
+}
+
+.developer-contact a:hover {
+  text-decoration: underline;
+}
+
+.developer-contact a:active {
+  text-decoration: none;
+  color: var(--basic-red);
 }
 
 .contact-website {
@@ -640,6 +671,10 @@ img {
   height: 44px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.social-button:hover, .social-button:active {
+  background-color: var(--basic-red);
 }
 
 .vkontakte {
@@ -689,6 +724,14 @@ img {
 .offers li:not(.special-tools):not(.rotary-hammers):not(.drills) {
   width: 300px;
   min-height: 123px;
+}
+
+.offers-grid a:not(.red-button):hover {
+  background-color: var(--transperent-hover-button);
+}
+
+.offers-grid a:not(.red-button):active {
+  background-color: var(--transperent-active-button);
 }
 
 .offers li:not(.special-tools) {
@@ -935,10 +978,14 @@ img {
 }
 
 .special-offers .red-button {
-  padding: 11px 46px 10px 46px;
+  padding: 11px 47px 9px 46px;
   position: absolute;
   bottom: 28px;
   left: 24px;
+}
+
+.special-offers .red-button:active {
+  background-color: var(--deep-red);
 }
 
 .developer-wrapper {
@@ -1170,11 +1217,20 @@ img {
   position: relative;
 }
 
+.green-button:hover {
+  background-color: var(--green-button);
+}
+
+.green-button:active {
+  background-color: var(--dark-green-button);
+}
+
 .green-button::before {
   content: url(../img/icon-cart.svg);
   position: absolute;
   left: 30px;
   top: 10px;
+  opacity: 0.3;
 }
 
 .green-button-transparent {
@@ -1188,10 +1244,28 @@ img {
   left: 41px;
 }
 
+.green-button-transparent:hover {
+  border: 3px solid var(--basic-dark-blue);
+}
+
+.green-button-transparent:active {
+  border: 3px solid var(--basic-dark-blue);
+  opacity: 0.5;
+}
+
+
 .developer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+}
+
+.developer li:hover {
+  box-shadow: var(--form-shadow);
+}
+
+.developer li:active {
+  opacity: 0.5;
 }
 
 .developer img {
@@ -1286,8 +1360,8 @@ img {
   font-weight: bold;
   color: var(--white);
   background-color: var(--basic-dark-blue);
-  padding-top: 13.5px;
-  padding-bottom: 17.5px;
+  padding-top: 15px;
+  padding-bottom: 16.5px;
   padding-left: 22px;
   border: none;
   display: block;
@@ -1300,6 +1374,10 @@ img {
 .blue-button:hover {
   background-color: var(--basic-darker-blue);
   color: var(--white);
+}
+
+.blue-button:hover {
+  background-color: var(--basic-darker-blue);
 }
 
 .blue-button:active {
@@ -1382,7 +1460,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-bottom: 70px;
-  padding-top: 70px;
+  padding-top: 67px;
 }
 
 .about h2, .contacts h2 {
@@ -1406,6 +1484,10 @@ img {
 
 .about {
   width: 450px;
+}
+
+.about p:last-of-type {
+  margin-bottom: 3px;
 }
 
 .about h2, .contacts h2, .about .list {
@@ -1653,7 +1735,7 @@ padding-right: 113px;
 }
 
 .catalog-item h3 {
-  padding-left: 31px;
+  padding-left: 29px;
   padding-right: 29px;
   margin: 0;
   font-size: 18px;
@@ -1666,27 +1748,27 @@ padding-right: 113px;
   margin-right: 140px;
 }
 
-.sort-by-high {
-  width: 11px;
-  height: 10px;
-  background-image: url(../img/shape.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: rotate(180deg);
-}
-
-.sort-by-low {
-  width: 11px;
-  height: 10px;
-  background-image: url(../img/shape.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .sort-by-arrows {
   width: 66px;
   margin-left: auto;
-  padding-left: 20px;;
+  padding-left: 20px;
+}
+
+.active-sort-button path {
+  fill: var(--basic-red);
+}
+
+.sort-by-high:hover path, .sort-by-low:hover path {
+  fill: var(--basic-black);
+}
+
+.sort-by-arrows button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--sort-background);
+  cursor: pointer;
+  outline: none;
 }
 
 .sort-container h3, .sort-form h3 {
@@ -1703,6 +1785,24 @@ padding-right: 113px;
 
 .sort-by a {
   opacity: 0.3;
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort-by .active-sort {
+  color: var(--basic-red);
+  opacity: 1;
+  border: none;
+}
+
+.sort-by a:hover {
+  opacity: 1;
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.active-arrow-sort path {
+  fill: var(--basic-red);
+  opacity: 1;
 }
 
 .sort-form fieldset {
@@ -1886,4 +1986,18 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .pagination .next-page {
   padding: 9px 30px 9px 31px;
+}
+
+.pagination a:hover {
+  border: 1px solid var(--basic-grey);
+}
+
+.pagination a:active {
+  border: 1px solid var(--basic-red);
+}
+
+.pagination .active-page {
+  border: 1px solid var(--basic-red);
+  background-color: var(--basic-red);
+  color: var(--white);
 }
