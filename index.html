@@ -269,11 +269,11 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="#">
+        <a href="#" class="open-map">
           <img src="img/map.png" width="300" height="158"
             alt="Адрес компании Техномарт: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
-        <a href="#" class="red-button button-style">Заблудились? Напишите нам!</a>
+        <a href="#" class="red-button button-style popup-button">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
@@ -358,15 +358,15 @@
       <div class="feedback-form">
         <p>
           <label for="feedback-name">Ваше имя:</label>
-          <input id="feedback-name" type="text" placeholder="Имя Фамилия" name="name">
+          <input id="feedback-name" type="text" placeholder="Имя Фамилия" name="name" class="login-field">
         </p>
         <p>
           <label for="feedback-email">Ваш e-mail:</label>
-          <input id="feedback-email" type="email" placeholder="email@example.com" name="email" required>
+          <input id="feedback-email" type="email" placeholder="email@example.com" name="email" class="email-field">
         </p>
         <p>
           <label for="textarea">Текст письма:</label>
-          <textarea id="textarea" placeholder="В свободной форме" name="order" required></textarea>
+          <textarea id="textarea" placeholder="В свободной форме" name="order" class="order-field"></textarea>
         </p>
       </div>
       <div class="button-wrapper">
@@ -374,11 +374,14 @@
       </div>
     </form>
   </div>
-  <div class="module-map modal">
+  <div class="modal-map modal">
     <h3 class="visually-hidden">Техномарт на карте</h3>
-    <iframe src="https://yandex.ru/map-widget/v1/-/CCQZaVEy1B" width="943" height="449"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.705240303718!2d30.318800581680534!3d59.9393946175334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593449684039!5m2!1sru!2sru" width="943" height="449"></iframe>
     <button type="button" class="close-button" aria-label="Закрыть карту"></button>
   </div>
+  <script src="js/popup.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 
 </html>
