@@ -35,6 +35,8 @@ popupClose.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!username.value || !email.value || !order.value) {
     evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {

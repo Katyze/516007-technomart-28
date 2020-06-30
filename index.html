@@ -6,7 +6,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"
     type="text/css">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Техномарт</title>
@@ -376,8 +376,19 @@
   </div>
   <div class="modal-map modal">
     <h3 class="visually-hidden">Техномарт на карте</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.705240303718!2d30.318800581680534!3d59.9393946175334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593449684039!5m2!1sru!2sru" width="943" height="449"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.705240303718!2d30.318800581680534!3d59.9393946175334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593449684039!5m2!1sru!2sru"
+      width="943" height="449"></iframe>
     <button type="button" class="close-button" aria-label="Закрыть карту"></button>
+  </div>
+  <div class="success-window modal">
+    <h4 class="visually-hidden">Результат добавления товара в корзину</h4>
+    <button aria-label="Закрыть форму" class="close-button"></button>
+    <p>Товар добавлен в корзину!</p>
+    <div class="button-wrapper">
+      <a href="#" class="button-style red-button">Оформить заказ</a>
+      <button aria-label="Закрыть форму" class="button-style another-close">Продолжить покупки</button>
+    </div>
   </div>
   <script src="js/popup.js"></script>
   <script src="js/map.js"></script>
