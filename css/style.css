@@ -30,6 +30,7 @@
   --text-orange: #FFD180;
   --icon-blue: #212A3A;
   --icon-dark-blue: #3D546F;
+  --alternative-background: #75543c;
   --cuprum-font: "Cuprum", "Arial", sans-serif;
   --under-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   --transperent-button: rgba(255, 255, 255, 0.3);
@@ -509,9 +510,10 @@ img {
 
 .site-navigation a:hover, .site-navigation a:focus {
   background-color: var(--basic-darker-blue);
+  opacity: 1;
 }
 
-.site-navigation a:active {
+.site-navigation a:active, .active-menu {
   background-color: var(--active-header-button);
   opacity: 0.5;
 }
@@ -870,10 +872,12 @@ img {
 
 .special-offers .rotary-hammers {
   background-image: url(../img/rotary-hammer.jpg);
+  background-color: var(--alternative-background);
 }
 
 .special-offers .drills {
   background-image: url(../img/drill.jpg);
+  background-color: var(--alternative-background);
 }
 
 .slide {

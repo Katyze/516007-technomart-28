@@ -1,4 +1,4 @@
-var bookmarkButton = document.querySelectorAll(".green-button-transparent");
+var bookmarkButton = document.querySelectorAll(".green-button");
 var cartPopup = document.querySelector(".success-window");
 var cartClose = document.querySelector(".success-window .close-button");
 var continueButton = document.querySelector(".success-window .another-close");
