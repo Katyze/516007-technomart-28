@@ -4,10 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"
-    type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap&family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Каталог магазина Техномарт</title>
 </head>
@@ -37,7 +34,7 @@
         </ul>
       </div>
     </div>
-    <section class="contact-navigation container">
+    <div class="contact-navigation container">
       <p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
       <div class="contacts-wrapper">
         <a href="tel:+78125550555" aria-label="Контактный телефон" class="phone-number">+7 (812) 555-05-55</a>
@@ -57,7 +54,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
     <nav class="container" aria-label="Навигация по сайту">
       <ul class="list site-navigation">
         <li>
@@ -67,7 +64,7 @@
           <a href="#">Компания</a>
         </li>
         <li>
-          <a href="#" class="active-menu">Каталог</a>
+          <a class="active-menu">Каталог</a>
         </li>
         <li>
           <a href="#">Новости</a>
@@ -103,7 +100,7 @@
       </div>
       <section class="sort">
         <h2 class="catalog-headline">Перфораторы</h2>
-        <div aria-label="Сортировка товаров" class="sort-container">
+        <div class="sort-container">
           <h3>Сортировка:</h3>
           <ul class="list sort-by sort-property">
             <li>
@@ -118,7 +115,7 @@
           </ul>
           <ul class="list sort-by sort-by-arrows">
             <li>
-              <button class="sort-by-high active-sort-button" type="button">
+              <button class="sort-by-high active-sort-button" type="button" disabled>
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path fill="#C5C5C5" d="M5.5 0L0 10h11z" />
                 </svg>
@@ -149,10 +146,10 @@
               </div>
               <div class="price-controls">
                 <label for="min_value" class="visually-hidden">Минимальная цена товара</label>
-                <input id="min_value" type="number" value="0" name="min_cost" class="range-sort">
+                <input id="min_value" type="number" value="0" name="min_cost" class="range-sort" min="0">
                 <span>&#8212;</span>
                 <label for="max_value" class="visually-hidden">Максимальная цена товара</label>
-                <input id="max_value" type="number" value="30000" name="max_cost" class="range-sort">
+                <input id="max_value" type="number" value="30000" name="max_cost" class="range-sort" min="0">
               </div>
             </div>
           </fieldset>
@@ -178,7 +175,7 @@
           </fieldset>
           <button type="submit" class="sort-button">Показать</button>
         </form>
-        <ul aria-label="Список товаров" class="list catalog-page">
+        <ul class="list catalog-page">
           <li class="catalog-item">
             <div class="buttons-image-wrapper">
               <img src="img/bosch6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -268,9 +265,9 @@
             <a href="#" class="red-button button-style">12500 Р.</a>
           </li>
         </ul>
-        <ul aria-label="pagination" class="list pagination">
+        <ul class="list pagination">
           <li>
-            <a href="#" aria-label="На страницу" class="visually-hidden">Предыдущая</a>
+            <a href="#" aria-label="На страницу" class="previous-page previous-page-active">Предыдущая</a>
           </li>
           <li>
             <a class="active-page" aria-label="Текущая станица">1</a>
@@ -331,7 +328,7 @@
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         <a href="tel:+78125550555" aria-label="Контактный телефон">+7 (812) 555-05-55</a>
       </div>
-      <ul aria-label="Навигация по внутренним разделам каталога" class="list inside-navigation">
+      <ul class="list inside-navigation">
         <li>
           <a href="#">Материалы</a>
         </li>
@@ -352,7 +349,7 @@
           <p>© 2010–2019 Компания «Техномарт»</p>
           <p>Все права защищены</p>
         </div>
-        <ul aria-label="Социальные сети" class="list social-network">
+        <ul class="list social-network">
           <li>
             <a href="#" class="social-button vkontakte"><span class="visually-hidden">Vkontakte</span></a>
           </li>
