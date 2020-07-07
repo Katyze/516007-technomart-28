@@ -299,7 +299,7 @@ img {
 .contact-navigation {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   padding-top: 46px;
   font-family: var(--cuprum-font);
 }
@@ -521,7 +521,7 @@ img {
 
 .site-navigation a {
   display: block;
-  padding: 17px 20px 20px 20px;
+  padding: 17px 20px 19px 20px;
   text-align: center;
   color: var(--white);
 }
@@ -1079,7 +1079,7 @@ img {
 }
 
 .catalog-main-header {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .breadcrumbs {
@@ -1130,8 +1130,8 @@ img {
 .catalog-headline {
   grid-column: 1 / 5;
   margin: 0;
-  padding-top: 29px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 28px;
   padding-left: 29px;
 }
 
@@ -1350,7 +1350,7 @@ img {
 
 .about-product {
   padding-top: 63px;
-  padding-bottom: 69px;
+  padding-bottom: 71px;
   background-color: var(--blue-background);
 }
 
@@ -1568,7 +1568,8 @@ img {
 
 .about .red-button {
   display: inline-block;
-  margin-top: 7px;
+  vertical-align: middle;
+  margin-top: 11px;
   padding: 11px 40px 9px 40px;
 }
 
@@ -1595,7 +1596,7 @@ img {
 .contacts .red-button {
   display: block;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 23px;
   padding-top: 11px;
   padding-bottom: 9px;
 }
@@ -1809,8 +1810,8 @@ img {
 }
 
 .sort-container {
-  margin-bottom: 5px;
-  padding: 4px 16px 10px 19px;
+  margin-bottom: 8px;
+  padding: 7px 16px 10px 19px;
   background-color: var(--sort-background);
 }
 
@@ -1879,7 +1880,7 @@ img {
 
 .sort .filter {
   min-height: 38px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   padding-top: 7px;
   padding-bottom: 10px;
   padding-left: 18px;
@@ -2077,7 +2078,7 @@ img {
 }
 
 .checkbox-form legend {
-  padding-top: 17px;
+  padding-top: 19px;
   padding-bottom: 21px;
 }
 
